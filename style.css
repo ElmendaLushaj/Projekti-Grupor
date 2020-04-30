@@ -1,0 +1,31 @@
+*{margin:0;
+padding:0;}
+body{font-display: flex;
+flex-direction: column;
+justify-content: center;
+width:80%;
+background-image: url(C:\Users\HP\Desktop\orangewallpaper.jpg);
+}
+#box1{
+display: block;
+flex-direction: column;
+color: white;
+border-radius: 14px;
+opacity: 0.7;
+
+
+}
+.img{
+    
+        width: 70px;
+        height: 70px;
+     
+}
+.part3.icons{
+    
+        width: 20px;
+        height: 20px;
+     
+
+
+}
