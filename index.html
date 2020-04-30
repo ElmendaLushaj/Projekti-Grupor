@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Sign-in</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\HP\Documents\GitHub\Projekti-Grupor\style.css"/>
+    <title>Sign in - PocketMarket</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script>
     function noData(){
         var nu=null;
@@ -17,33 +17,43 @@
     </script>
 </head>
 <body>
-<div class='box1'>
-<div id='part1'>
-<img id='img' src="C:\Users\HP\Desktop\person-icon-png-person-white-symbol-png-transparent.png "width:40px;height:40px;>   
-<input id='label1' name="" type="text" placeholder="Username"/>
-<input id='label2' name="" type="password" placeholder="Password"/>
+    <div class = "bodyy">
+        <div class = "border1">
+<div class="box1">
 
+<img id="img" src="person.png ">   
+
+<form class="signIn">
+
+<input id= "label" name="" type="text" placeholder="Username"/> 
+<input  id = "label" name="" type="password" placeholder="Password"/>
+<div class="extra">
+    <button class = "signup" onclik = SignUp()>Sign Up</button>
+<button  class = "signup">Forgot Password ?</button>
 </div>
-<div id='part2'>
-<div id='text1' href=" ">Register</div>
-<div id='text1' href=" ">Forgot password?</div>
 
-
-</div>
 <button id='button1' onclick='noData()'>Sign-in</button>
-<div id='part3'>
-<div id='icons'>
-    <img src="C:\Users\HP\Desktop\facebook-logo-white-11549845815wclpvkfdsb.png" href="https://www.facebook.com/">
+
+</form>
+
+
+
+
+
+
+
+ <div class = "icons">
+    <a href="https://www.facebook.com/"><img id ="social" src = "facebook.png"/></a>
+
+
+
+    <a href="https://www.google.com/"><img  id ="social" src = "google.png"/></a>
+
+
+    <a href="https://www.instagram.com/"><img   id ="social" src = "instagram.png"/></a>
 
 </div>
-<div id='icons'>
-    <img src="C:\Users\HP\Desktop\google+icon.png" href="https://www.google.com/">
-
-</div>
-<div id='icons'>
-    <img src="C:\Users\HP\Desktop\instagram-logo-black-circle-download-instagram-icon-for-twitch-_840-859.png" href="https://www.instagram.com/">
-
-</div>
+    </div>
     </div>
 </div>
 </body>

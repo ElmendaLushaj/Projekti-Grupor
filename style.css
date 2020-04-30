@@ -1,31 +1,102 @@
-*{margin:0;
-padding:0;}
-body{font-display: flex;
-flex-direction: column;
-justify-content: center;
-width:80%;
-background-image: url(C:\Users\HP\Desktop\orangewallpaper.jpg);
-}
-#box1{
-display: block;
-flex-direction: column;
-color: white;
-border-radius: 14px;
-opacity: 0.7;
+
+
+
+
+.bodyy{
+       
+        height:700px;
+        width:1360px;
+        display: flex;
+        justify-content: center;
+ 
+        flex-direction: row;
+        background-color: rgb(228, 157, 26);
+        
+        
+         
+        
 
 
 }
-.img{
-    
-        width: 70px;
-        height: 70px;
-     
+.border1{
+      height: 550px;
+      width: 450px;
+      border: 10px solid white;
+      border-radius: 25px; 
+      margin-bottom: 75px;
+      margin-top: 75px;
+
+
 }
-.part3.icons{
+.box1{
+border: 2px solid white; 
+
+width: 400px;
+height: 500px;
+flex-direction: column;
+border-radius: 25px;
+margin-left: 25px;
+margin-top: 25px;
+
+}
+#img{
+        margin-top: 50px;
+         margin-left: 150px;
+         margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+        
+}#social{
     
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
      
+
+
+}
+.icons{
+        margin-top:100px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left:100px;
+}
+
+.signIn{
+        
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  margin-left:100px ;
+  margin-top: 10px;
+  
+
+}
+.signup{
+margin-top: 5px;
+margin-bottom: 5px;
+border:none;
+background: none;
+
+}
+.extra{
+        justify-content: row;
+}
+#label{
+        margin-top: 5px;
+        border: 2px solid whitesmoke;
+        border-radius: 25px;
+        height: 30px;
+}
+#button1{
+    border: 3px solid white;
+    background: none;
+    color: white;
+    
+    height: 40px;
+
 
 
 }
