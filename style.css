@@ -4,8 +4,9 @@
 
 .bodyy{
        
-        height:700px;
-        width:1360px;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
  
@@ -23,8 +24,8 @@
       width: 450px;
       border: 10px solid white;
       border-radius: 25px; 
-      margin-bottom: 75px;
-      margin-top: 75px;
+      margin-top: 3%;
+      
 
 
 }
