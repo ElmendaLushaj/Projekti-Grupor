@@ -5,21 +5,29 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script>
     function noData(){
-        var nu = null;
-        var res=document.querySelector('.text1');
-        console.log(res+nu);
-        if (res==nu) {
-            /*var response=*/alert("Username or password is empty!");
-        /*console.log(response);*/ 
+  
+      var input = document.getElementById("label").value;
+      var input1 = document.getElementById("label1").value;
+      if(input.trim()=='' || input1.trim()==''){
+          alert("Username or Password empty");
+      }
        
-        } 
+       
+        
+    }
+ 
+ 
+
+    
+
         
        
-    }
+    
     </script>
 </head>
 <body>
     <div class = "bodyy">
+        <div class="shade">
         <div class = "border1">
 <div class="box1">
 
@@ -27,14 +35,14 @@
 
 <form class="signIn">
 
-<input id= "label" name="" type="text" placeholder="Username"/> 
-<input  id = "label" name="" type="password" placeholder="Password"/>
+<input class="label"  id= "label" name="" type="text" placeholder="Username"/> 
+<input  class="label" id = "label1" name="" type="password" placeholder="Password"/>
 <div class="extra">
-    <button class = "signup" onclik = SignUp()>Sign Up</button>
-<button  class = "signup">Forgot Password ?</button>
+    <button  id = "sUP" class = "signup2" onclick = 'SignUp()'>Sign Up</button>
+<button   class = "signup2">Forgot Password ?</button>
 </div>
 
-<button id='button1' onclick='noData()'>Sign-in</button>
+<button id='button1' onclick="noData()">Sign-in</button>
 
 </form>
  <div class = "icons">
@@ -49,7 +57,14 @@
 
 </div>
     </div>
+ <form class="forma2">
+    <div id="signUpp" style = "display:none">
+        welcome
+
     </div>
+</form>
+    </div>
+</div>
 </div>
 </body>
 
