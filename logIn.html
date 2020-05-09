@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sign in - PocketMarket</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script>
+    function noData(){
+  
+      var input = document.getElementById("label").value;
+      var input1 = document.getElementById("label1").value;
+      if(input.trim()=='' || input1.trim()==''){
+          alert("Username or Password empty");
+      }
+       
+       
+        
+    }
+ 
+ 
+
+    
+
+        
+       
+    
+    </script>
+</head>
+<body>
+    <div class = "bodyy">
+        <div class="shade">
+        <div class = "border1">
+<div class="box1">
+
+<img id="img" src="person.png ">   
+
+<form class="signIn">
+
+<input class="label"  id= "label" name="" type="text" placeholder="Username"/> 
+<input  class="label" id = "label1" name="" type="password" placeholder="Password"/>
+<div class="extra">
+    <button  id = "sUP" class = "signup2" onclick = 'SignUp()'>Sign Up</button>
+<button   class = "signup2">Forgot Password ?</button>
+</div>
+
+<button id='button1' onclick="noData()">Sign-in</button>
+
+</form>
+ <div class = "icons">
+    <a href="https://www.facebook.com/"><img id ="social" src = "facebook.png"/></a>
+
+
+
+    <a href="https://www.google.com/"><img  id ="social" src = "google.png"/></a>
+
+
+    <a href="https://www.instagram.com/"><img   id ="social" src = "instagram.png"/></a>
+
+</div>
+    </div>
+ <form class="forma2">
+    <div id="signUpp" style = "display:none">
+        welcome
+
+    </div>
+</form>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
