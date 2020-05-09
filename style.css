@@ -1,135 +1,98 @@
-
-
-
-
-.bodyy{
-       
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
- 
-        flex-direction: row;
-        background-image: url(supermarket.jpg);
-        
-        
-        
-         
-        
-
-
+.backgroundi{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url(supermarket.jpg);
 }
 .shade{
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        
-        display: flex;
-        justify-content: center;
- 
-        flex-direction: row;
-
-        background-color: rgba(255,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(255,0,0,0.6);
 }
-.border1{
-      height: 550px;
-      width: 450px;
-      border: 10px solid white;
-      border-radius: 25px; 
-      margin-top: 3%;
-      
 
 
-}
-.box1{
-border: 2px solid white; 
-
-width: 400px;
-height: 500px;
-flex-direction: column;
-border-radius: 25px;
-margin-left: 25px;
-margin-top: 25px;
-
-}
-#img{
-        margin-top: 50px;
-         margin-left: 150px;
-         margin-bottom: 20px;
-        width: 100px;
-        height: 100px;
-        
-}#social{
+.BoxiKryesor{
     
-        width: 50px;
-        height: 50px;
-     
-
-
-}
-.icons{
-        margin-top:100px;
-        width: 200px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left:100px;
-}
-
-.signIn{
-        
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 200px;
-  margin-left:100px ;
-  margin-top: 10px;
+    background-color: rgb(250, 114, 137);
+    display:flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    box-shadow: 0 0 20px 0 #000;
+    margin: auto;
+    font-weight: bold;
+    height:650px;
+    width: 1300px;
+    
   
-
-}
- .signup2{
-margin-top: 5px;
-margin-bottom: 5px;
-border:none;
-background: none;
-
-
-
-}
-.extra{
-        justify-content: row;
-}
-.label{
-        margin-top: 5px;
-        border: 2px solid whitesmoke;
-        border-radius: 25px;
-        height: 30px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
- .signup2:hover{
-  background-color: orange;
-  color:white;
-
-
-}
-#button1{
-    border: 3px solid white;
-    background: none;
-    color: white;
     
-    height: 40px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#signUpp{
-        border: 2px solid white; 
-
-        width: 400px;
-        height: 500px;
-        flex-direction: column;
+	
+        
+        
+       
+    
+	
+    }
+    .button{
+        background-color:orange;
+        color: cornsilk;
         border-radius: 25px;
-        margin-left: 25px;
-        margin-top: 25px;
-        background-color: aliceblue;
+        height: 50px;
+        width: 150px;
+        font-size: 13px;
+        font-family:'Arial';
+        border-color:black ;
+        margin-left:13%
+        
+        
+        
 
-}
+        
+        
+        
+    }
+    .FOTOBox{
+        text-align: left;
+        justify-content: center;
+        flex-direction: column;
+        
+
+    }
+    .AboutUsBoxi{
+        margin: auto;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .Menu{
+        margin: 0;
+        flex-direction: row;
+        display: flex;
+        width: 50px;
+        height: 70px;
+
+        
+    }
+    .Button1{
+        background-color:orange; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 250px;
+        border-radius: 20px;
+        border-color:black;
+        
+    }
+    
