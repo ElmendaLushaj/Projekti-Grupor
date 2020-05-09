@@ -3,49 +3,51 @@
 <head>
     <title>Sign in - PocketMarket</title>
     <link rel="stylesheet" type="text/css" href="logInStyle.css"/>
-    <script>
-    function noData(){
-  
-      var input = document.getElementById("label").value;
-      var input1 = document.getElementById("label1").value;
-      if(input.trim()=='' || input1.trim()==''){
-          alert("Username or Password empty");
-      }
-       
-       
-        
-    }
- 
- 
+    <script src = "logInJS.js">
 
-    
-
-        
-       
-    
     </script>
 </head>
 <body>
     <div class = "bodyy">
         <div class="shade">
         <div class = "border1">
+            <div class="extra">
+            <button class = "signup2" onclick="SignUp()">Registre</button>
+            <button class = "signup2" onclick="SignUp()">Already have an account?</button>
+            </div>
 <div class="box1">
-
+    
 <img id="img" src="person.png ">   
 
-<form class="signIn">
-
+<form id = "signIn" class="signIn">
+<div class="signInIn">
 <input class="label"  id= "label" name="" type="text" placeholder="Username"/> 
 <input  class="label" id = "label1" name="" type="password" placeholder="Password"/>
 <div class="extra">
-    <button  id = "sUP" class = "signup2" onclick = 'SignUp()'>Sign Up</button>
+    
+   
 <button   class = "signup2">Forgot Password ?</button>
 </div>
 
-<button id='button1' onclick="noData()">Sign-in</button>
 
+<button id='button1' onclick="noData()">Sign-in</button>
+</div>
 </form>
- <div class = "icons">
+ 
+    
+ <form id = "forma2" class="forma2" style="display: none;" >
+    <div id="signUpp" >
+        <input class="label"  id= "label" name="" type="text" placeholder="Name"/> 
+        <input class="label"  id= "label" name="" type="text" placeholder="Email"/> 
+<input  class="label" id = "label1" name="" type="password" placeholder="Password"/>
+<input  class="label" id = "label1" name="" type="password" placeholder="Reconfirm Password"/>
+
+
+<button id='button1' >Registre</button>
+
+    </div>
+</form>
+<div class = "icons">
     <a href="https://www.facebook.com/"><img id ="social" src = "facebook.png"/></a>
 
 
@@ -57,13 +59,7 @@
 
 </div>
     </div>
- <form class="forma2">
-    <div id="signUpp" style = "display:none">
-        welcome
-
-    </div>
-</form>
-    </div>
+</div>
 </div>
 </div>
 </body>

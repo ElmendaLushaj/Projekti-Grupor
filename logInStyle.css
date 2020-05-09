@@ -29,11 +29,11 @@
     background-color: rgba(255,0,0,0.6);
 }
 .border1{
-  height: 550px;
+  height: 600px;
   width: 450px;
   border: 10px solid white;
   border-radius: 25px; 
-  margin-top: 3%;
+  margin-top: 1%;
   
 
 
@@ -42,11 +42,11 @@
 border: 2px solid white; 
 
 width: 400px;
-height: 500px;
+height: 550px;
 flex-direction: column;
 border-radius: 25px;
 margin-left: 25px;
-margin-top: 25px;
+margin-top: 10px;
 
 }
 #img{
@@ -81,7 +81,7 @@ flex-direction: column;
 width: 200px;
 margin-left:100px ;
 margin-top: 10px;
-
+position: relative;
 
 }
 .signup2{
@@ -113,19 +113,24 @@ color:white;
 border: 3px solid white;
 background: none;
 color: white;
-
+width:150px;
+margin-top: 4%;
+margin-left: 15px;
 height: 40px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#signUpp{
-    border: 2px solid white; 
 
-    width: 400px;
-    height: 500px;
+.forma2{
+    
+       
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    border-radius: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
-    background-color: aliceblue;
-
+    width: 200px;
+    margin-left:100px ;
+    margin-top: 10px;
+    position: relative;
+       
+        
+    
 }
