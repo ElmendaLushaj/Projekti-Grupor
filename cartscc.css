@@ -1,0 +1,58 @@
+body{
+
+    width: 100vw;
+    height: 100vh;
+}
+#headerr{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: orangered;
+    height: 30%;
+    text-align: center;
+    color: white;
+}
+#footerr{
+    background-color: orangered;
+    height: 5%;
+}
+.kryesor{
+    height: 60%;
+}
+table{
+   
+    border:silver solid 2px;
+    border-radius: 25px;
+    border-collapse:separate !important ;
+    text-align: center;
+    
+}
+th ,td {
+    width:150px;
+   
+}
+td{
+    border-top: silver solid 2px;
+    
+}
+.tabela{
+    display: flex;
+    margin-left:8%;
+    margin-top: 3%;
+    
+}
+.label{
+    border: orangered solid 1px;
+    border-radius: 25px;
+    width:250px;
+}
+.cuponB{
+    color: orangered;
+    border: none;
+    width: 250px;
+    background-color:silver;
+}
+.cuponB:hover{
+    color: white;
+    background-color: orangered;
+}
