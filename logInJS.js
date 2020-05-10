@@ -16,17 +16,34 @@ function noData(){
     document.getElementById("forma2").style.display= "flex";
      }
      else{
-        document.getElementById("signIn").style.display= "flex";
         document.getElementById("forma2").style.display= "none";
+        document.getElementById("signIn").style.display= "flex";
+      
 
      }
 
-    
+    }
+ function noDataR(){
+   var name = document.getElementById("label2").value;
+   var email = document.getElementById("label3").value;
+   var password = document.getElementById("label4").value;
+   var password2 = document.getElementById("label5").value;
+   if(name.trim()=='' || email.trim() =='' || password.trim()=='' || password2.trim()==''){
+   alert("You must fill in all of the fields");
+  }
+  else{ if(password.match(password2)){
+      alert ("--Welcome to pocketMarket--(Log in now)");
+  }   
+  else {
+      alert("Your passwords do not match Up!");
+  }  
+  }
+} 
 
 
 
 
- }
+ 
  
  /*
  function changeForm(form) {
