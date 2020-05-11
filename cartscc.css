@@ -19,7 +19,7 @@ body{
 .kryesor{
     height: 60%;
 }
-table{
+.productList{
    
     border:silver solid 2px;
     border-radius: 25px;
@@ -53,6 +53,33 @@ td{
     background-color:silver;
 }
 .cuponB:hover{
+    color: white;
+    background-color: orangered;
+}
+.tot{
+   
+    
+    border:silver solid 2px;
+    border-collapse:collapse ;
+    text-align: center;   
+}
+.legendd{
+   
+    margin-top: 60px;
+    width:300px;
+    margin-left: 50%;
+}
+.out{
+    
+   margin-top:5px;
+    width:300px;
+    margin-left: 51%;
+    color:orangered;
+    background-color: silver;
+    border: 1px;
+    height:30px;
+}
+.out:hover{
     color: white;
     background-color: orangered;
 }
