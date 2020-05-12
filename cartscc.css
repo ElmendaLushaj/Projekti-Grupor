@@ -4,26 +4,74 @@ body{
     height: 100vh;
 }
 #headerr{
-    padding-left: 6%;
+    
     display: flex;
     justify-content: center;
+    height: 40vh;
     flex-direction: column;
     /*background-color: orangered;*/
     background-image: url(background.JPG);
-    height: 30%;
+    justify-content: stretch;
     text-align: center;
     color: white;
+    background-color: rgba(128,0,0,0.7);
 }
-#footerr{
-    background-color: orangered;
-    height: 5%;
+.footeri {
+    margin-top: 8%;
+    padding-top: 4%;
+    width: 100vw;
+    height: 25vh;
+    background-color: maroon;
+    color: white;
+    justify-content: center;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.pckMrk {
+    font-family: Calibri;
+    font-size: 45px;
+    margin-left: 6%;
+}
+
+#downmenu {
+    margin-left: 35%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutus {
+    justify-content: right;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: maroon;
+    border: none;
+    margin-left: 6%;
+    box-shadow: none;
+}
+
+.footbx2:hover {
+    border-color: white;
+}
+
+#copy {
+    justify-content: center;
+    margin-left: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 3%;
+}
+
+.footbx2 {
+    justify-content: right;
+    flex-direction: row;
 }
 .kryesor{
     height: 60%;
 }
 .productList{
    
-    border:silver solid 2px;
+    border:silver solid 5px;
     border-radius: 25px;
     border-collapse:separate !important ;
     text-align: center;
@@ -34,7 +82,7 @@ th ,td {
    
 }
 td{
-    border-top: silver solid 2px;
+    border-top: silver solid 5px;
     
 }
 .tabela{
@@ -44,24 +92,24 @@ td{
     
 }
 .label{
-    border: orangered solid 1px;
+    border: maroon solid 1px;
     border-radius: 25px;
     width:250px;
 }
 .cuponB{
-    color: orangered;
+    color: maroon;
     border: none;
     width: 250px;
     background-color:silver;
 }
 .cuponB:hover{
     color: white;
-    background-color: orangered;
+    background-color: maroon;
 }
 .tot{
    
     
-    border:silver solid 2px;
+    border:silver solid 5px;
     border-collapse:collapse ;
     text-align: center;   
 }
@@ -76,12 +124,24 @@ td{
    margin-top:5px;
     width:300px;
     margin-left: 51%;
-    color:orangered;
+    color:maroon;
     background-color: silver;
     border: 1px;
     height:30px;
 }
 .out:hover{
     color: white;
-    background-color: orangered;
+    background-color: maroon;
+}
+
+#pro{
+    width:60px;
+    height: 60px;
+}
+#remove{
+    border:none;
+    background-color: none;
+}
+#remove:hover{
+    background-color:red;
 }

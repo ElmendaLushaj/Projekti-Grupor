@@ -1,7 +1,7 @@
 .bodyy{
        
-    margin: 0;
-    width: 106vw;
+   
+    width: 100vw;
     /*height: 100vh;*/
     display: flex;
     justify-content: center;
@@ -19,8 +19,8 @@
 }
 .shade{
     
-    margin: 0;
-    width: 106vw;
+    
+    width: 100vw;
    
     display: flex;
     justify-content: center;
@@ -148,7 +148,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     justify-content: center;
     flex-direction: row;
-    padding-left: 6%;
+   
     flex-direction: column;
     
 }
