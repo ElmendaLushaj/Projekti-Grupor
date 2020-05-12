@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.upper {
+    margin: 0;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    left: 25%;
+    background-image: url('C:\\Users\\HP\\Documents\\GitHub\\Projekti-Grupor\\background.JPG');
+    justify-content: stretch;
+}
+
+#box1 {
+    margin-left: 5%;
+    margin-top: 3%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    display: flex;
+}
+
+.rks {
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    color: white;
+}
+
+.pocketMarket {
+    font-size: 78px;
+    font-family: 'Gill Sans';
+    color: white;
+}
+
+.searchbtn {
+    margin-top: 8%;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 60%;
+    justify-content: space-between;
+}
+
+#srch {
+    -moz-border-radius: 50px 0 0px 50px;
+    border-radius: 50px 0px 0px 50px;
+    width: 80%;
+    height: 35%;
+    border: none;
+}
+
+#btn {
+    background-color: white;
+    -moz-border-radius: 50px 0 0 50px;
+    border-radius: 0 50px 50px 0;
+    width: 10%;
+    height: 35%;
+    border: none;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+#btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#icon {
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#icon:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#box2 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.over {
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    color: white;
+}
+
+.choose {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Segoe Print';
+    color: white;
+}
+
+.lower {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.meny {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-left: 40%;
+    border-bottom: black;
+}
+
+#homebtn {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 15px;
+    border-color: white;
+}
+
+#homebtn:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+#imge {
+    height: 60px;
+    width: 60px;
+}
+
+.middle {
+    flex-direction: row;
+    display: flex;
+}
+
+.nenmeny {
+    justify-content: left;
+    flex-direction: column;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 7%;
+    width: 10%;
+    height: 40%;
+}
+
+#nmenubtn {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(173, 4, 4);
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-top: 20%;
+    border-color: white;
+    box-shadow: white;
+}
+
+#nmenubtn:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+.arrowright {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 35%;
+}
+
+.arrowleft {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 35%;
+}
+
+#photo {
+    width: 60%;
+    height: 85%;
+}
+
+.photos {
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.footeri {
+    margin-top: 10%;
+    padding-top: 4%;
+    width: 100vw;
+    height: 25vh;
+    background-color: maroon;
+    color: white;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 6%;
+    flex-direction: column;
+}
+
+#downmenu {
+    margin-left: 35%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutus {
+    justify-content: right;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: maroon;
+    border: none;
+    margin-left: 3%;
+    box-shadow: none;
+}
+
+.footbx2:hover {
+    border-color: white;
+}
+
+#copy {
+    justify-content: center;
+    margin-left: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 3%;
+}
