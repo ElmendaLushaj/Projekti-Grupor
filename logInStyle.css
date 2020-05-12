@@ -1,13 +1,14 @@
 .bodyy{
        
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 106vw;
+    /*height: 100vh;*/
     display: flex;
     justify-content: center;
-
+    
     flex-direction: row;
-    background-image: url(supermarket.jpg);
+    background-image: url(supermarket2.jpg);
+    background-size: 100% 100%;
     
     
     
@@ -17,16 +18,17 @@
 
 }
 .shade{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
     
+    margin: 0;
+    width: 106vw;
+   
     display: flex;
     justify-content: center;
 
     flex-direction: row;
+    
 
-    background-color: rgba(255,0,0,0.6);
+    background-color: rgba(128,0,0,0.7);
 }
 .border1{
   height: 600px;
@@ -107,8 +109,8 @@ background: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .signup2:hover{
-background-color: orange;
-color:white;
+background-color:maroon;
+color:maroon;
 
 
 }
@@ -136,4 +138,44 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        
         
     
+}
+.footeri {
+  
+   padding-top:4%;
+    width: 100vw;
+    height: 25vh;
+    background-color: maroon;
+    color: white;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 6%;
+    flex-direction: column;
+    
+}
+#downmenu {
+    margin-left: 35%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutus {
+    justify-content: right;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: maroon;
+    border: none;
+    margin-left: 3%;
+    box-shadow: none;
+}
+
+.footbx2:hover {
+    border-color: white;
+}
+
+#copy {
+    justify-content: center;
+    margin-left: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 3%;
 }
