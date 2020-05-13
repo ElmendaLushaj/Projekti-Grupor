@@ -1,0 +1,183 @@
+.backgroundi{
+    margin: 0;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url(supermarket2.jpg);
+     background-size:100% 100%;
+}
+.shade{
+	
+    margin: 0;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+   
+    flex-direction: column;
+	justify-content: center;
+    background-color: rgba(128,0,0,0.7);
+}
+
+
+.BoxiKryesor{
+    margin-top:4%;
+	margin-bottom:8%;
+	margin-left:10%;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    box-shadow: 0 0 20px 0 #000;
+    
+    font-weight: bold;
+    height:80vh;
+    width: 80vw;
+    
+  
+    
+	
+        
+        
+       
+    
+	
+    }
+    .button{
+    border: none;
+   background: silver;
+   color: maroon;
+   width:150px;
+   margin-top: 4%;
+   margin-left: 80px;
+   height: 40px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border-radius: 10px;
+        
+        
+
+        
+        
+        
+    }
+    .FOTOBox{
+        text-align: left;
+        justify-content: center;
+        flex-direction: column;
+        
+
+    }
+    .AboutUsBoxi{
+        margin: auto;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .Menu{
+        margin: 0;
+        flex-direction: row;
+        display: flex;
+        width: 50px;
+        height: 70px;
+
+        
+    }
+    .Button1{
+        font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(173, 4, 4);
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-top: 20%;
+    border-color: white;
+    box-shadow: white;
+    border-radius: 10px;
+        
+    }
+	.button:hover{
+		color: white;
+    background-color: maroon;
+	}
+	
+   .footeri {
+    
+    padding-top: 4%;
+    width: 100vw;
+    height: 25vh;
+    background-color: maroon;
+    color: white;
+    justify-content: center;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.pckMrk {
+    font-family: Calibri;
+    font-size: 45px;
+    margin-left: 6%;
+}
+
+#downmenu {
+    margin-left: 35%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutus {
+    justify-content: right;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: maroon;
+    border: none;
+    margin-left: 6%;
+    box-shadow: none;
+}
+
+.footbx2:hover {
+    border-color: white;
+}
+
+#copy {
+    justify-content: center;
+    margin-left: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 3%;
+}
+
+.footbx2 {
+    justify-content: right;
+    flex-direction: row;
+}
+.meny {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    width: 60px;
+    height: 60px;
+	margin-top:5%;
+    margin-left: 45%;
+    border-bottom: black;
+}
+#homebtn {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top:5%;
+    border-color: white;
+	background:none;
+}
+
+#homebtn:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+
+#imge {
+    height: 60px;
+    width: 60px;
+}
