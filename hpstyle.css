@@ -270,3 +270,9 @@
     width: 50px;
     height: 50px;
 }
+.photos2{
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 20%;   
+}

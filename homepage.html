@@ -4,6 +4,9 @@
 <head>
     <title>pocketMarket-Home</title>
     <link rel="stylesheet" href="hpstyle.css">
+    
+
+    </script>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
             <div class="searchbtn">
                 <input id="srch" placeholder="  Search..." />
 
-                <button id="btn" type="submit"><img id="icon"src="searchicon.png"></button>
+                <button id="btn" type="submit"><img id="icon" src="searchicon.png"></button>
             </div>
 
         </div>
@@ -38,11 +41,13 @@
     <div class="lower">
 
         <div class="meny">
-            <button id="homebtn" type="menu"><img id="imge"src="homeicon.JPG"  ></button>
-            <button id="homebtn" type="menu" onclick="location.href='Cart.html'"><img id="imge"src="carticon.JPG"  ></button>
-            <button id="homebtn" type="menu"><img id="imge"src="locationicon.JPG"  ></button>
-            <button id="homebtn" type="menu" onclick="location.href='logIn.html'"><img id="imge"src="loginicon.JPG"  ></button>
-            <button id="homebtn" type="menu"><img id="imge" src="languageicon.JPG"  ></button>
+            <button id="homebtn" type="menu"><img id="imge" src="homeicon.JPG"></button>
+            <button id="homebtn" type="menu" onclick="location.href='Cart.html'"><img id="imge"
+                    src="carticon.JPG"></button>
+            <button id="homebtn" type="menu"><img id="imge" src="locationicon.JPG"></button>
+            <button id="homebtn" type="menu" onclick="location.href='logIn.html'"><img id="imge"
+                    src="loginicon.JPG"></button>
+            <button id="homebtn" type="menu"><img id="imge" src="languageicon.JPG"></button>
 
         </div>
 
@@ -66,12 +71,63 @@
 
 
             </div>
+            
+
+
+            <div photos>
+
+                <div class="photos2 fade">
+
+                    <img id="photo" src="jogurt.jpg">
+
+                </div>
+
+                <div class="photos2 fade">
+
+                    <img id="photo" src="keksaa.jpg">
+
+                </div>
+
+                <div class="photos2 fade">
+
+                    <img id="photo" src="ujTh.jpg">
+
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="pikat"></span>
+                <span class="pikat"></span>
+                <span class="pikat"></span>
+            </div>
         </div>
 
 
     </div>
 
+<script>
+    var indx = 0;
+showSlides();
 
+function showSlides() {
+  var j;
+  var slides = document.getElementsByClassName("photos2");
+  var dots = document.getElementsByClassName("pikat");
+  for (j = 0; j < slides.length; j++) {
+    slides[j].style.display = "none";  
+  }
+  indx++;
+  if (indx > slides.length) {indx = 1}    
+  for (j = 0; j < dots.length; j++) {
+    dots[j].className = dots[j].className.replace(" active", "");
+  }
+  slides[indx-1].style.display = "block";  
+  dots[indx-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
 
 
 
@@ -93,14 +149,14 @@
         <button id="footbtn" onclick="location.href='logIn.html'">Sign-in</button>
         <button id="footbtn">Language</button>
     </div>
-    <div class="footbx2" style = "display: flex; flex-direction: row;">
-        <button type="button" id="aboutus"onclick="location.href='aboutus.html'">ABOUT US</button>
+    <div class="footbx2" style="display: flex; flex-direction: row;">
+        <button type="button" id="aboutus" onclick="location.href='aboutus.html'">ABOUT US</button>
         <button type="button" id="aboutus">REGISTER</button>
-        <p style = "margin-left: 10%;"> Our <br>collaborators</p>
-            <img  class="bsh" src = "viva.png">
-            <img  class="bsh" src = "albi.png">
-            <img  class= "bsh" src = "superviva.png">
-        
+        <p style="margin-left: 10%;"> Our <br>collaborators</p>
+        <img class="bsh" src="viva.png">
+        <img class="bsh" src="albi.png">
+        <img class="bsh" src="superviva.png">
+
     </div>
 
     <p id="copy">&copy All Rights Reserved</p>
