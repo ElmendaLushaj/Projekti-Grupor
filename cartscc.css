@@ -23,9 +23,10 @@ body{
     height: 25vh;
     background-color: maroon;
     color: white;
-    justify-content: center;
-    flex-direction: row;
-    flex-direction: column;
+    
+   /* justify-content: center;
+   flex-direction: row;
+   flex-direction: column;*/
 }
 
 .pckMrk {
@@ -35,7 +36,8 @@ body{
 }
 
 #downmenu {
-    margin-left: 35%;
+    margin-left: 60%;
+    display: block;
     justify-content: center;
     flex-direction: column;
 }
@@ -52,7 +54,7 @@ body{
 }
 
 .footbx2:hover {
-    border-color: white;
+    border-color: silver;
 }
 
 #copy {
@@ -175,3 +177,24 @@ td{
     height: 60px;
     width: 60px;
 }
+#footbtn{
+    border:none;
+    background-color: white;
+    font-family:  Times New Georgia, 'Times New Roman', Times, serif ;
+    width:80px;
+}
+#footbtn:hover{
+    background-color: silver;
+}
+.bsh{
+    width: 50px;
+    height: 50px;
+}
+/*.bashkpuntoret{
+   
+    
+    margin-left:80%;
+}
+#downmenu{
+    display: inline-block;
+}*/
