@@ -145,6 +145,15 @@ td {
     display: inline-block;
 }*/
 
+.middlepart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: maroon;
+    width: auto;
+    height: auto;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -230,16 +239,17 @@ td {
     height: 50px;
 }
 
-/*.photos2 {
+.photos3 {
     justify-content: right;
     flex-direction: row;
     margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 5%;
 }
-*/
+
 .footbx3 {
     display: flex;
     flex-direction: row;
     margin-left: 85%;
-    color: white;
+     color: white;
+    
 }
