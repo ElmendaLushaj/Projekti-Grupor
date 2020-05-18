@@ -139,23 +139,58 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
     
 }
-.footeri {
-  
-   padding-top:4%;
+.middlepart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: maroon;
+    width: auto;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: maroon;
     width: 100vw;
     height: 25vh;
-    background-color: maroon;
     color: white;
-    justify-content: center;
-    flex-direction: row;
-   
-    flex-direction: column;
+    position: relative;
+    margin-right: inherit;
+    bottom: 0;
     
 }
-#downmenu {
-    margin-left: 60%;
+
+.pckMrk {
+    display: flex;
+    font-family: Calibri;
+    font-size: 45px;
+    justify-content: justify;
+    background-color: maroon;
+    color: white;
+    text-align: justify;
+}
+
+.downmenu {
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    color: white;
+    font-family: 'Calibri';
+    margin-left: 30%;
+}
+
+#footbtn {
+    width: 40%;
+    height: auto;
+    border-color: white;
+    margin-top: 1%;
+    background-color: maroon;
+    color: white;
+}
+
+#footbtn:hover {
+    background-color: silver;
 }
 
 #aboutus {
@@ -165,7 +200,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     background-color: maroon;
     border: none;
-    margin-left: 3%;
+    margin-left: 6%;
     box-shadow: none;
 }
 
@@ -174,23 +209,41 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #copy {
+    color: white;
     justify-content: center;
-    margin-left: 35%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 3%;
-}
-#footbtn{
-    border:none;
-    background-color: white;
-    font-family:  Times New Georgia, 'Times New Roman', Times, serif ;
-    width:80px;
-
+    font-family: 'Calibri';
+    background-color: maroon;
+    display: flex;
 }
 
-#footbtn:hover{
-    background-color: silver;
+.oc {
+    color: white;
+    font-family: 'Calibri';
+    display: flex;
+    margin-right: 5%;
 }
-.bsh{
+
+.footbx2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bsh {
     width: 50px;
     height: 50px;
+}
+
+.photos3 {
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.footbx3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 85%;
+     color: white;
+    
 }

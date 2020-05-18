@@ -114,6 +114,14 @@
     width: 60px;
 }
 
+.middlepart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: maroon;
+    width: auto;
+    height: auto;
+}
 .footer {
     display: flex;
     flex-direction: column;
