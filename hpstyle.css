@@ -407,16 +407,17 @@
     height: 50px;
 }
 
-.photos2 {
+.photos3 {
     justify-content: right;
     flex-direction: row;
     margin-top: 10%;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 .footbx3 {
     display: flex;
     flex-direction: row;
     margin-left: 85%;
-    color: white;
+     color: white;
+    
 }

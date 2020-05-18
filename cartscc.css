@@ -101,15 +101,33 @@ td {
     background-color: red;
 }
 
+.lower {
+    justify-content: center;
+    flex-direction: row;
+}
+
 .meny {
     justify-content: center;
     flex-direction: row;
     display: flex;
     width: 60px;
     height: 60px;
-    margin-top: 5%;
-    margin-left: 45%;
+    margin-left: 40%;
     border-bottom: black;
+}
+
+#homebtn {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 15px;
+    border-color: white;
+}
+
+#homebtn:hover {
+    border-color: black;
+    cursor: pointer;
 }
 
 #imge {
@@ -212,13 +230,13 @@ td {
     height: 50px;
 }
 
-.photos2 {
+/*.photos2 {
     justify-content: right;
     flex-direction: row;
     margin-top: 10%;
     margin-left: 20%;
 }
-
+*/
 .footbx3 {
     display: flex;
     flex-direction: row;
