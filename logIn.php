@@ -38,16 +38,16 @@
 </form>
  
     
- <form id = "forma2" class="forma2" style="display: none;" >
+ <form action="views/insertUserView.php" method="post" id = "forma2" class="forma2" style="display: none;" >
     <div id="signUpp" >
-        <input class="label"  id= "label2" name="" type="text" placeholder="Name"/> 
-        <input class="label"  id= "label3" name="" type="text" placeholder="Email"/> 
-<input  class="label" id = "label4" name="" type="password" placeholder="Password"/>
+        <input  name = "emri" class="label"  id= "label2" name="" type="text" placeholder="Name"/> 
+        <input  name = "email" class="label"  id= "label3" name="" type="text" placeholder="Email"/> 
+<input name = "paswordi"  class="label" id = "label4" name="" type="password" placeholder="Password"/>
 <input  class="label" id = "label5" name="" type="password" placeholder="Reconfirm Password"/>
-<button class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver"><b>Already have an account?</b></button>
+<!---<button class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver"><b>Already have an account?</b></button>--->
 
 
-<button type = "button" id='button1' onclick="noDataR()">Registre</button>
+<input name = "submitbtn" type = "submit" id='button1' onclick="noDataR()"  value = "Registre"/>
 
     </div>
 </form>
