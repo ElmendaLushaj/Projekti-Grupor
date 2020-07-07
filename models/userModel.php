@@ -2,28 +2,28 @@
 class User
 {
     private $UserID;
-    private $Name;
+    private $FirstName;
     private $Email;
-    private $Password;
+    private $Passworddd;
 
-    public function __construct($Name, $Email, $Password)
+    public function __construct($FirstName, $Email, $Passworddd)
     {
-        $this->Name = $Name;
+        $this->FirstName = $FirstName;
         $this->Email = $Email;
-        $this->Password = $Password;
+        $this->Passworddd = $Passworddd;
     }
 
-    public function getName()
+    public function getFirstName()
     {
-        return $this->Name;
+        return $this->FirstName;
     }
     public function getEmail()
     {
         return $this->Email;
     }
-    public function getPassword()
+    public function getPassworddd()
     {
-        return $this->Password;
+        return $this->Passworddd;
     }
     public function setName($name)
     {

@@ -1,44 +1,37 @@
 <?php
 include_once 'DbConnection.php';
 include_once 'userModel.php';
-class UserMapper
+class UserMapper extends DBConnection
 {
-    private $user;
+    private  $user;
     private $connection;
+
     public function __construct($user)
     {
-        $obj = new DBConnection();
-        $this->connection = $obj->getConnection();
-        $this->user = $user;
+       $this->user = $user;
+       $this->connection = $this->getConnection();
+        
     }
 
-    public function Insert($emri, $email, $password)
+    public function Insert()
     {
 
-        //$sql = "INSERT INTO User (name, email, password) VALUES (:name, :surname, :sex)";
-        //$stmt= $pdo->prepare($sql);
-        
-      /* $emri = $this->user->getName();
-        $adresa = $this->user->getEmail();
-        $fjalkalimi = $this->user->getPassword();
-        */
-        $sql = "INSERT INTO User (`Name` ,Email,`Password`) VALUES (`:Name` , :Email, `:Password`)";
-        
-    //(:name,:email,:password)
-
-          
-       $statement = $this->connection->prepare($sql);
+        $sql = "INSERT INTO [User] (Firstname,Email,Passworddd) VALUES (:firstname,:email,:passworddd)";
        
-     
-    
-        $statement->bindParam(":Name", $emri);
-        $statement->bindParam(":Email", $email);
-        $statement->bindParam(":Password", $password);
+        $emriU = $this->user->getFirstName();
+        $emailU = $this->user->getEmail();
+        $paswordU = $this->user->getPassworddd();
 
-          
-      
-       $statement->execute();
-        //$statement->execute();
+        $statement = $this->connection->prepare($sql);
+       /* $statement->bindParam(":firstname", $emriU);
+        $statement->bindParam(":email",$emailU);
+        $statement->bindParam(":passworddd", $paswordU);*/
+        $statement->execute(array(
+            ':firstname'   => $emriU,
+            ':email'   => $emailU,
+            ':passworddd' => $paswordU,
+            
+              ));
     }
 
    /* public function Update()

@@ -1,12 +1,20 @@
 
+
 <?php
 
 class DBConnection{
 
+
+
 private  $servername = 'DESKTOP-6VUBVAB';
 private $user = 'web';
+
 private $password = '123456789';
 private $databaseName = 'pocketMarket';
+
+
+
+
 
 public function getConnection()
 {
@@ -16,9 +24,9 @@ public function getConnection()
        $connection = new PDO("sqlsrv:Server= $this->servername ;Database= $this->databaseName", "$this->user", "$this->password");
         $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
-       /* if( $connection ) {
+     /* if( $connection ) {
     
-            echo "Connection is okay.<br />";
+          echo "Connection is okay.<br />";
              
          }else{
              echo "Connection could not be established.<br />";
@@ -27,7 +35,7 @@ public function getConnection()
              
          }      
        
-        */
+       */ 
         
         
         
@@ -39,10 +47,17 @@ public function getConnection()
 }
 
 
+ 
 
 
 }
 
-
-
 ?>
+
+
+
+
+
+
+
+
