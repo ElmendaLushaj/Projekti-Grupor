@@ -5,31 +5,40 @@ class UserMapper
 {
     private $user;
     private $connection;
-    public function __construct(\User $user)
+    public function __construct($user)
     {
         $obj = new DBConnection();
         $this->connection = $obj->getConnection();
         $this->user = $user;
     }
 
-    public function Insert()
+    public function Insert($emri, $email, $password)
     {
 
         //$sql = "INSERT INTO User (name, email, password) VALUES (:name, :surname, :sex)";
-        $stmt= $pdo->prepare($sql);
+        //$stmt= $pdo->prepare($sql);
         
-        $sql = "INSERT INTO User (name ,email,password) VALUES (:name,:email,:password)";
-
-        $emri = $this->user->getName();
+      /* $emri = $this->user->getName();
         $adresa = $this->user->getEmail();
         $fjalkalimi = $this->user->getPassword();
+        */
+        $sql = "INSERT INTO User (`Name` ,Email,`Password`) VALUES (`:Name` , :Email, `:Password`)";
+        
+    //(:name,:email,:password)
 
-        $statement = $this->connection->prepare($sql);
-        $statement->bindParam(":name", $emri);
-        $statement->bindParam(":email", $adresa);
-        $statement->bindParam(":password", $fjalkalimi);
+          
+       $statement = $this->connection->prepare($sql);
+       
+     
+    
+        $statement->bindParam(":Name", $emri);
+        $statement->bindParam(":Email", $email);
+        $statement->bindParam(":Password", $password);
 
-        $statement->execute();
+          
+      
+       $statement->execute();
+        //$statement->execute();
     }
 
    /* public function Update()

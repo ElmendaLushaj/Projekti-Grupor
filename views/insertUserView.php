@@ -16,17 +16,11 @@ class InsertView
         $controller = new UserController();
         $response = $controller->InsertUser($emri, $email, $paswordi);
 
-        if ($response) {
-
-      ?>
-      <h1>Useri u shtuaa</h1>
-      <?php
+     if ($response) {
+        echo "Useri u shtua";
 
         } else {
-            ?>
-            <h1>Useri NUK u shtuaa</h1>
-            <?php
-
+            echo "Useri nuk u shtua";
         }
     }
 }
