@@ -85,20 +85,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_PADDING ON
 GO
-CREATE TABLE [dbo].[User](
-	[UserID] [int] IDENTITY (1,1) NOT NULL,
-	[Name] [varchar](255) NOT NULL,
-	[Email] [varchar](255) NOT NULL,
-	[Password] [int] NULL,
-PRIMARY KEY CLUSTERED 
-(
-	[UserID] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
 
-GO
-SET ANSI_PADDING OFF
-GO
 
 
 /****** Object:  Table [dbo].[Product]    Script Date: 23/06/2020 15:36:30 ******/
@@ -216,11 +203,6 @@ GO
 
 
 
-SET IDENTITY_INSERT [dbo].[User] ON 
-
-INSERT [dbo].[User] ([UserID], [Name], [Email], [Password]) VALUES (1, N'Elmenda', N'el@gmail.com', N'000000')
-INSERT [dbo].[User] ([UserID], [Name], [Email], [Password]) VALUES (2, N'Melina', N'ml@gmail.com', N'111111')
-INSERT [dbo].[User] ([UserID], [Name], [Email], [Password]) VALUES (3, N'Kujtes', N'kl@gmail.com', N'222222')
 
 SET IDENTITY_INSERT [dbo].[User] OFF
 
@@ -307,3 +289,38 @@ INSERT [dbo].[MarketProduct] ([ID], [MarketID], [ProductID]) VALUES (1,2 ,3 )
 INSERT [dbo].[MarketProduct] ([ID], [MarketID], [ProductID]) VALUES (2, 4, 4)
 INSERT [dbo].[MarketProduct] ([ID], [MarketID], [ProductID]) VALUES (3, 6, 5)
 SET IDENTITY_INSERT [dbo].[MarketProduct] OFF
+
+DROP TABLE [User];
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[User](
+	[UserID] [int] IDENTITY (1,1) NOT NULL,
+	[FirstName] [varchar](255) NOT NULL,
+	[Email] [varchar](255) NOT NULL,
+	[Passworddd] [varchar](255) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[UserID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+
+
+SET IDENTITY_INSERT [dbo].[User] ON 
+
+INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd]) VALUES (1, N'Elmenda', N'el@gmail.com', N'000000')
+INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd]) VALUES (2, N'Melina', N'ml@gmail.com', N'111111')
+INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd]) VALUES (3, N'Kujtes', N'kl@gmail.com', N'222222')
+
+SET IDENTITY_INSERT [dbo].[User] OFF
+
+DROP TABLE [User]
