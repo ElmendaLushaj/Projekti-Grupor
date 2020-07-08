@@ -35,38 +35,42 @@ class UserMapper extends DBConnection
     }
 
 
-    public function logIn(){
-
-     $slql = "SELECT  COUNT(*)  FROM [User] WHERE Firstname = :username AND Passworddd =:password ;"
-         
+    public function Login()
+    {
+        $sql2 = 'SELECT  COUNT(*) AS "num_user"  FROM  [User]  WHERE FirstName = :username AND Passworddd =:passworddd';
+        
         $emriU = $this->user->getFirstName();
+        
         $paswordU = $this->user->getPassworddd();
 
- 
-
-
-
+        $statement = $this->connection->prepare($sql2);
+        $statement->bindValue(":username", $emriU);
+      
+        $statement->bindValue(":passworddd", $paswordU);
+       
+        try {
+            if ($statement->execute()) {
+              $row = $statement->fetchAll();
+           }         
+           // There should be only 1 row;
+           if ( $row[0]["num_user"] != 1) {
+             return false;
+           } else {
+             
+             return true; 
+           }
+        } catch (Exception $e) {
+            echo 'Caught exception: ', $e->getMessage();
+        }   
     }
 
+        
+       
+        
+    
 
 
-   /* public function Update()
-    {
-        // duhet te ndryshohet query dhe atributet qe pranohen
-        $sql = "INSERT INTO Studenti (Firstname,lastname,phone) VALUES (:firstname,:lastname,:phone)";
-        $statement = $this->connection->prepare($sql);
-
-        $emri = $this->studenti->getFirstName();
-        $mbiemri = $this->studenti->getLastName();
-        $phone = $this->studenti->getPhone();
-
-        $statement->bindParam(":firstname", $emri);
-        $statement->bindParam(":lastname", $mbiemri);
-        $statement->bindParam(":phone", $phone);
-
-        $statement->execute();
-    }*/
-
-}
+   
+        }
 
 ?>

@@ -16,8 +16,17 @@ class UserController
 
     }
 
-    public function GetUser()
+    public function GetUser($username,$email, $passwordU)
     {
+        $user = new User($username,$email, $passwordU);
+        $userMapper3= new UserMapper($user);
+        $userMapper3->LogIn();
+        $res = $userMapper3->LogIn();
+        if($res){
+            return true;
+        }else{
+            return false;
+        }
         
       
     }

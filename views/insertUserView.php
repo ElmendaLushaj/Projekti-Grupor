@@ -34,8 +34,10 @@ class InsertView
         if ($response) {
             ?>
                         <h1>U regjistrua me sukses</h1>
+                      
                     <?php
-            
+                    header("Location:..//homepage.php"); 
+                    exit();
                     } else {
                     ?>
                         <h1>Nuk u regjistrua me sukses</h1>

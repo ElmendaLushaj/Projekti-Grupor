@@ -21,7 +21,7 @@
 <img id="img" src="loginicon2.JPG">   
 
 
-<form id = "signIn" class="signIn">
+<form action="views/logInForm.php" method="post" id = "signIn" class="signIn">
 <div class="signInIn">
 <input name = "username" class ="label"  id= "label" name="" type="text" placeholder="Username"/> 
 <input name = "passwordddd" class="label" id = "label1" name="" type="password" placeholder="Password"/>
