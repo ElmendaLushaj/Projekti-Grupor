@@ -6,17 +6,11 @@ if (isset($_POST['submitbtn'])) {
     $emailU= $_POST['email'];
     $paswordU = $_POST["paswordi"];
 
-    if(!isset($emriU) || trim($emriU) == '' || !isset($emailU) || trim($emailU) == '' || !isset($paswordU) || trim($paswordU) == '' ){
-
-       
-    
-
-   echo "You did not fill out the required fields.";
-}else{
+ 
    
     $view = new InsertView();
     $view->InsertUserForm($emriU, $emailU, $paswordU);
-}
+
     
     
 }
@@ -25,6 +19,14 @@ class InsertView
 {
     public function InsertUserForm($emriU, $emailU, $paswordU)
     {
+        if(!isset($emriU) || trim($emriU) == '' || !isset($emailU) || trim($emailU) == '' || !isset($paswordU) || trim($paswordU) == '' ){
+
+            echo "You did not fill out the required fields.";
+         }else{
+            
+          
+        
+             
         // dergojme kerkesen ne controller
         $controller = new UserController();
         $response = $controller->InsertUser($emriU, $emailU, $paswordU);
@@ -37,7 +39,9 @@ class InsertView
                     } else {
                     ?>
                         <h1>Nuk u regjistrua me sukses</h1>
-            <?php
+        
+          <?php
+                    }
     }
 }
 }

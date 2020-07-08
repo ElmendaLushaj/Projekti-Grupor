@@ -16,8 +16,9 @@ class UserController
 
     }
 
-    /*public function GetStudents()
+    public function GetUser()
     {
-        //return array;
-    }*/
+        
+      
+    }
 }

@@ -23,8 +23,8 @@
 
 <form id = "signIn" class="signIn">
 <div class="signInIn">
-<input class="label"  id= "label" name="" type="text" placeholder="Username"/> 
-<input  class="label" id = "label1" name="" type="password" placeholder="Password"/>
+<input name = "username" class ="label"  id= "label" name="" type="text" placeholder="Username"/> 
+<input name = "passwordddd" class="label" id = "label1" name="" type="password" placeholder="Password"/>
 
 <div class="extra">
     
@@ -33,7 +33,7 @@
 </div>
 
 
-<button id='button1' onclick="noData()">Sign-in</button>
+<button name = "logINB" id='button1' onclick="noData()">Sign-in</button>
 </div>
 </form>
  

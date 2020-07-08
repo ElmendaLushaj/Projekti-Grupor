@@ -34,6 +34,22 @@ class UserMapper extends DBConnection
               ));
     }
 
+
+    public function logIn(){
+
+     $slql = "SELECT  COUNT(*)  FROM [User] WHERE Firstname = :username AND Passworddd =:password ;"
+         
+        $emriU = $this->user->getFirstName();
+        $paswordU = $this->user->getPassworddd();
+
+ 
+
+
+
+    }
+
+
+
    /* public function Update()
     {
         // duhet te ndryshohet query dhe atributet qe pranohen
