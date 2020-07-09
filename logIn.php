@@ -43,7 +43,7 @@
         <input  name = "emri" class="label"  id= "label2" name="" type="text" placeholder="Name"/> 
         <input  name = "email" class="label"  id= "label3" name="" type="text" placeholder="Email"/> 
 <input name = "paswordi"  class="label" id = "label4" name="" type="password" placeholder="Password"/>
-<input  class="label" id = "label5" name="" type="password" placeholder="Reconfirm Password"/>
+<input  name = "paswordi2" class="label" id = "label5" name="" type="password" placeholder="Reconfirm Password"/>
 <!---<button class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver"><b>Already have an account?</b></button>--->
 
 
