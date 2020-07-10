@@ -304,6 +304,7 @@ CREATE TABLE [dbo].[User](
 	[FirstName] [varchar](255) NOT NULL,
 	[Email] [varchar](255) NOT NULL,
 	[Passworddd] [varchar](255) NOT NULL,
+	[RoleId][int] NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[UserID] ASC
@@ -317,10 +318,42 @@ GO
 
 SET IDENTITY_INSERT [dbo].[User] ON 
 
-INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd]) VALUES (1, N'Elmenda', N'el@gmail.com', N'000000')
-INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd]) VALUES (2, N'Melina', N'ml@gmail.com', N'111111')
-INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd]) VALUES (3, N'Kujtes', N'kl@gmail.com', N'222222')
+INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd] ,[RoleId]) VALUES (1, N'Elmenda', N'el@gmail.com', N'000000' , 2)
+INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd], [RoleId]) VALUES (2, N'Melina', N'ml@gmail.com', N'111111' , 2)
+INSERT [dbo].[User] ([UserID], [FirstName], [Email], [Passworddd], [RoleId]) VALUES (3, N'Kujtes', N'kl@gmail.com', N'222222', 2)
 
 SET IDENTITY_INSERT [dbo].[User] OFF
 
+Use [pocketMarket]
+
 DROP TABLE [User]
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[ADMIN](
+	[ADMINID] [int] IDENTITY (1,1) NOT NULL,
+	[FirstName] [varchar](255) NOT NULL,
+	[Email] [varchar](255) NOT NULL,
+	[Passworddd] [varchar](255) NOT NULL,
+	[RoleId][int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ADMINID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+
+SET IDENTITY_INSERT [dbo].[ADMIN] ON 
+
+INSERT [dbo].[ADMIN] ([ADMINID], [FirstName], [Email], [Passworddd] ,[RoleId]) VALUES (1, N'Admini', N'admin@gmail.com', N'123456' , 1)
+
+
+SET IDENTITY_INSERT [dbo].[ADMIN] OFF
