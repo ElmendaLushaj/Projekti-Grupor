@@ -6,11 +6,12 @@ if (isset($_POST['submitbtn'])) {
     $emailU= $_POST['email'];
     $paswordU = $_POST["paswordi"];
     $paswordU2 = $_POST["paswordi2"];
+    $roli = 2;
 
  
    
     $view = new InsertView();
-    $view->InsertUserForm($emriU, $emailU, $paswordU,$paswordU2);
+    $view->InsertUserForm($emriU, $emailU, $paswordU,$paswordU2,$roli);
 
     
     
@@ -18,7 +19,7 @@ if (isset($_POST['submitbtn'])) {
 
 class InsertView
 {
-    public function InsertUserForm($emriU, $emailU, $paswordU, $paswordU2)
+    public function InsertUserForm($emriU, $emailU, $paswordU, $paswordU2 , $roli)
     {
         if(!isset($emriU) || trim($emriU) == '' || !isset($emailU) || trim($emailU) == '' || !isset($paswordU) || trim($paswordU) == '' ){
 
@@ -33,7 +34,7 @@ class InsertView
              
         // dergojme kerkesen ne controller
         $controller = new UserController();
-        $response = $controller->InsertUser($emriU, $emailU, $paswordU, $paswordU2);
+        $response = $controller->InsertUser($emriU, $emailU, $paswordU, $paswordU2 , $roli);
 
         if ($response) {
             ?>

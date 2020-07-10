@@ -7,7 +7,7 @@ class UserController
     {
         //therrasim funksionet qe bejne kalkulimin e kerkeses
         //insert user ndatabase
-        $user = new User($emriU, $emailU, $passwordU);
+        $user = new User($emriU, $emailU, $passwordU , $roli);
         $userMapper2 = new UserMapper($user);
         $userMapper2->Insert();
         return true;
@@ -16,9 +16,9 @@ class UserController
 
     }
 
-    public function GetUser($username,$email, $passwordU)
+    public function GetUser($username,$email, $passwordU , $roli)
     {
-        $user = new User($username,$email, $passwordU);
+        $user = new User($username,$email, $passwordU, $roli);
         $userMapper3= new UserMapper($user);
         $userMapper3->LogIn();
         $res = $userMapper3->LogIn();

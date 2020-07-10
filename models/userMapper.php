@@ -16,11 +16,12 @@ class UserMapper extends DBConnection
     public function Insert()
     {
 
-        $sql = "INSERT INTO [User] (Firstname,Email,Passworddd) VALUES (:firstname,:email,:passworddd)";
+        $sql = "INSERT INTO [User] (Firstname,Email,Passworddd , RoleId) VALUES (:firstname,:email,:passworddd,:roli)";
        
         $emriU = $this->user->getFirstName();
         $emailU = $this->user->getEmail();
         $paswordU = $this->user->getPassworddd();
+        $roli=2;
 
         $statement = $this->connection->prepare($sql);
        /* $statement->bindParam(":firstname", $emriU);
@@ -30,6 +31,7 @@ class UserMapper extends DBConnection
             ':firstname'   => $emriU,
             ':email'   => $emailU,
             ':passworddd' => $paswordU,
+            ':roli' =>$roli,
             
               ));
     }

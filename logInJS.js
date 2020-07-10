@@ -5,7 +5,7 @@ function noData(){
     if(input.trim()=='' || input1.trim()==''){
         alert("Username or Password empty");
     }else{
-      alert("Username or Password incorrect");
+      //alert("Username or Password incorrect");
     }
      
      

@@ -1,20 +1,13 @@
 
-
 <?php
 
 class DBConnection{
-
-
 
 private  $servername = 'DESKTOP-6VUBVAB';
 private $user = 'web';
 
 private $password = '123456789';
 private $databaseName = 'pocketMarket';
-
-
-
-
 
 public function getConnection()
 {
@@ -31,14 +24,8 @@ public function getConnection()
          }else{
              echo "Connection could not be established.<br />";
              die( print_r( sqlsrv_errors(), true));
-        
-             
          }      
-       
        */ 
-        
-        
-        
     } catch (PDOException $e) {
         echo $e->getMessage();
         return null;
