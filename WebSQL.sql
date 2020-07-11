@@ -137,7 +137,7 @@ CREATE TABLE [dbo].[SliderProduct](
 	[SliderProductID] [int]IDENTITY (1,1) NOT NULL,
 
 [SliderProductPicPath] [varchar](255) NOT NULL,
-[ProductID][int] NOT NULL,
+
 	PRIMARY KEY CLUSTERED 
 (
 	[SliderProductID] ASC
@@ -149,7 +149,6 @@ CREATE TABLE [dbo].[SliderMarket](
 	[SliderMarketID] [int]IDENTITY (1,1) NOT NULL,
 	
 [SliderMarketPicPath] [varchar](255) NOT NULL,
-[MarketID][int] NOT NULL,
 
 PRIMARY KEY CLUSTERED 
 (
@@ -194,12 +193,7 @@ GO
 USE[pocketMarket]
 GO
 
-ALTER TABLE [dbo].[SliderMarket]  WITH CHECK ADD FOREIGN KEY([MarketID])
-REFERENCES [dbo].[Market] ([MarketID])
-GO
-ALTER TABLE [dbo].[SliderProduct]  WITH CHECK ADD FOREIGN KEY([ProductID])
-REFERENCES [dbo].[Product] ([ProductID])
-GO
+
 
 
 
@@ -230,21 +224,21 @@ SET IDENTITY_INSERT [dbo].[Product] OFF
 
 SET IDENTITY_INSERT [dbo].[SliderProduct] ON 
 
-INSERT [dbo].[SliderProduct] ([SliderProductID], [SliderProductPicPath], [ProductID]) VALUES (1, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\ujTh.jpg', 1)
-INSERT [dbo].[SliderProduct] ([SliderProductID], [SliderProductPicPath], [ProductID]) VALUES (2, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\jogurt.jpg', 2)
-INSERT [dbo].[SliderProduct] ([SliderProductID], [SliderProductPicPath], [ProductID]) VALUES (3, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\keksaa.jpg', 3)
+INSERT [dbo].[SliderProduct] ([SliderProductID], [SliderProductPicPath]) VALUES (1, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\ujTh.jpg' )
+INSERT [dbo].[SliderProduct] ([SliderProductID], [SliderProductPicPath]) VALUES (2, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\jogurt.jpg')
+INSERT [dbo].[SliderProduct] ([SliderProductID], [SliderProductPicPath]) VALUES (3, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\keksaa.jpg')
 
 
 SET IDENTITY_INSERT [dbo].[SliderProduct] OFF
 
 SET IDENTITY_INSERT [dbo].[SliderMarket] ON 
 
-INSERT [dbo].[SliderMarket] ([SliderMarketID], [SliderMarketPicPath], [MarketID]) VALUES (1, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\aldi.jpg', 1)
-INSERT [dbo].[SliderMarket] ([SliderMarketID], [SliderMarketPicPath], [MarketID]) VALUES (2, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\edeka.jpg', 2)
-INSERT [dbo].[SliderMarket] ([SliderMarketID], [SliderMarketPicPath], [MarketID]) VALUES (3, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\lidl.jpg', 3)
+INSERT [dbo].[SliderMarket] ([SliderMarketID], [SliderMarketPicPath]) VALUES (1, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\aldi.jpg')
+INSERT [dbo].[SliderMarket] ([SliderMarketID], [SliderMarketPicPath]) VALUES (2, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\edeka.jpg')
+INSERT [dbo].[SliderMarket] ([SliderMarketID], [SliderMarketPicPath]) VALUES (3, N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\lidl.jpg')
 
 
-SET IDENTITY_INSERT [dbo].[SliderProduct] OFF
+SET IDENTITY_INSERT [dbo].[SliderMarket] OFF
 
 
 
