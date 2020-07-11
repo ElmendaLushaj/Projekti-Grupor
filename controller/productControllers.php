@@ -19,6 +19,18 @@ class ProductController
     public function GetProduct()
     {
         
+       $productMapper2 = new ProductMapper("1" , "2" , "3" , "4" , "5");
+        $res = $productMapper2->getProducts();
+        return  $res;
       
+
+     
+  
+ 
+       
+      
+      
+    
     }
 }
+?>

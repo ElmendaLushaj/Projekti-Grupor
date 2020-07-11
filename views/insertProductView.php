@@ -22,6 +22,14 @@ if (isset($_POST['submitbtn'])) {
     
     
 }
+if (isset($_POST['submitbtn2'])) {
+    $view2 = new InsertView();
+    $view2->FillTableRowsWithStudents();
+
+
+
+
+}
 
 class InsertView
 {
@@ -58,6 +66,15 @@ class InsertView
           echo "Register Failed";
                     }
     }
+}
+
+public function FillTableRowsWithStudents()
+    {
+        // dergojme kerkesen ne controller
+        $controller = new ProductController();
+        $data = $controller->GetProduct();
+
+        return $data;
 }
 }
 ?>

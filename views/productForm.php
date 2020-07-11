@@ -23,6 +23,10 @@
             <input type="file" name="ProductPicPath" accept="image/x-png,image/gif,image/jpeg" placeholder="Product Picture" />
             <input type="submit" name="submitbtn" value="Register" />
         </form>
+
+        <form action="insertProductView.php" method="post">
+        <input type="submit" name="submitbtn2" value="merri Produktet" />
+        </form>
     </div>
 </body>
 

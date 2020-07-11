@@ -5,11 +5,12 @@ if (isset($_POST['logINB'])) {
     $username = $_POST['username'];
     $email = "veq prov";
     $paswordU = $_POST["passwordddd"];
+    $roliId = 2;
 
  
    
     $view = new LogInView();
-    $view->LogInUserForm($username ,$email, $paswordU);
+    $view->LogInUserForm($username ,$email, $paswordU,$roliId);
 
     
     
@@ -17,7 +18,7 @@ if (isset($_POST['logINB'])) {
 
 class LogInView
 {
-    public function LogInUserForm($username, $email ,$paswordU)
+    public function LogInUserForm($username, $email ,$paswordU,$roliId)
     {
         if(!isset($username) || trim($username) == ''  || !isset($paswordU) || trim($paswordU) == '' ){
 
@@ -31,7 +32,7 @@ class LogInView
              
         // dergojme kerkesen ne controller
         $controller = new UserController();
-        $response = $controller->GetUser($username,$email, $paswordU);
+        $response = $controller->GetUser($username,$email, $paswordU,$roliId);
 
         if ($response == false) {
             ?>

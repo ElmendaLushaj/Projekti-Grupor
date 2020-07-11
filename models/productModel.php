@@ -15,7 +15,10 @@ class Product
         $this->Category = $Category;
         $this->ProductPicPath = $ProductPicPath;
     }
-
+    public function getProductID()
+    {
+        return $this->ProductID;
+    }
     public function getProductName()
     {
         return $this->ProductName;

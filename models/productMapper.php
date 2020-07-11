@@ -1,6 +1,8 @@
+
 <?php
 include_once 'DbConnection.php';
 include_once 'productModel.php';
+
 class ProductMapper extends DBConnection
 {
     private  $product;
@@ -68,13 +70,28 @@ class ProductMapper extends DBConnection
         
     }*/
 }   
-        
-       
-        
-    
+ 
+public function getProducts(){
+  
+ 
+  $product = $this->connection->prepare("SELECT * FROM Product" );
+   $product->execute();
+//$productResult = $product->fetchAll();
+/*while($row =$product->fetchAll() {
+  echo $row["Product ID: "].$row["ProductID"]."<br/>"."Product Name: ".$row["ProductName"]."<br/>"."Product Code: ".$row["ProductCode"]."<br/>"."Producer: ".$row["Producer"]."<br/>"."Category: ".$row["Category"]."<br/>"."ProducetPicPath: ".$row["ProductPicPath"]."<br/>";
+}*/
 
 
-   
-        }
+$result = $product->fetchAll();
+foreach($result as $row)
+{
+  echo $row["ProductID"]."<br/>"."Product Name: ".$row["ProductName"]."<br/>"."Product Code: ".$row["ProductCode"]."<br/>"."Producer: ".$row["Producer"]."<br/>"."Category: ".$row["Category"]."<br/>"."ProducetPicPath: ".$row["ProductPicPath"]."<br/><br/>";
+} 
+
+}
+}
+
+
 
 ?>
+
