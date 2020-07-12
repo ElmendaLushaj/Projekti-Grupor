@@ -44,6 +44,10 @@ function noData(){
   }
 } 
 
+function Refresh(){
+  window.open('logIn.php');
+}
+
 
 
 

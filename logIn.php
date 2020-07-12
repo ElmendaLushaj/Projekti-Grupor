@@ -36,7 +36,7 @@
 <div class="extra">
     
    
-<button   class = "signup2" style = "text-decoration: underline; font-size: 15px; background-color:silver; margin-left: 15px;"><b>Forgot Password?</b></button>
+<button  name="pass"  class = "signup2" style = "text-decoration: underline; font-size: 15px; background-color:silver; margin-left: 15px;" onclick = "Refresh()"><b>Forgot Password?</b></button>
 </div>
 
 
@@ -51,13 +51,15 @@
         <input  name = "email" class="label"  id= "label3" name="" type="text" placeholder="Email"/> 
 <input name = "paswordi"  class="label" id = "label4" name="" type="password" placeholder="Password"/>
 <input  name = "paswordi2" class="label" id = "label5" name="" type="password" placeholder="Reconfirm Password"/>
-<button name ="forgot" class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver"><b>Already have an account?</b></button>
 
 
+<button name ="forgot" class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver" ><b>Already have an account?</b></button>
 <input name = "submitbtn" type = "submit" id='button1' onclick="noDataR()"  value = "Registre"/>
+
 
     </div>
 </form>
+
 <div class = "icons">
     <a href="https://www.facebook.com/"><img id ="social" src = "facebook.png"/></a>
 
@@ -82,10 +84,10 @@
     <div class="middlepart">
         <div class="downmenu">
 
-            <button id="footbtn"onclick = "location.href='homepage.html'">Home</button>
-            <button id="footbtn" onclick="location.href='Cart.html'">Cart</button>
+            <button id="footbtn">Home</button>
+            <button id="footbtn">Cart</button>
             <button id="footbtn">Location</button>
-            <button id="footbtn" onclick="location.href='logIn.html'">Sign-in</button>
+            <button id="footbtn" onclick="location.href='logIn.php'">Sign-in</button>
             <button id="footbtn">Language</button>
             <p class="oc" style="margin-left: 30%;"> Our collaborators:<br></p>
         </div>

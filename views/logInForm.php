@@ -16,6 +16,16 @@ if (isset($_POST['logINB'])) {
     
 }
 
+
+if (isset($_POST['pass'])) {
+    header("Location:../logIn.php"); 
+    exit();
+    
+        
+}
+
+
+
 class LogInView
 {
     public function LogInUserForm($username, $email ,$paswordU,$roliId)

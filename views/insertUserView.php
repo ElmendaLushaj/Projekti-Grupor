@@ -16,6 +16,11 @@ if (isset($_POST['submitbtn'])) {
     
     
 }
+if (isset($_POST['forgot'])) {
+
+    header("Location:../logIn.php");   
+    exit();
+}
 
 class InsertView
 {
@@ -49,7 +54,7 @@ class InsertView
                         <h1>Nuk u regjistrua me sukses</h1>
         
           <?php
-          header("Location:../logIb.php"); 
+          header("Location:../logIn.php"); 
           exit();
           echo "Nuk u regjistrua me sukses";
                     }
