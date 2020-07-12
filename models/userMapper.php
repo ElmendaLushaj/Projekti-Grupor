@@ -39,16 +39,19 @@ class UserMapper extends DBConnection
 
     public function Login()
     {
-        $sql2 = 'SELECT  COUNT(*) AS "num_user"  FROM  [User]  WHERE FirstName = :username AND Passworddd =:passworddd';
+        $sql2 = ' SELECT  COUNT(*) AS "num_user"  FROM  [User]  WHERE (FirstName = :username or Email = :email) AND Passworddd =:passworddd AND RoleId =:roleId' ;
         
         $emriU = $this->user->getFirstName();
         $emailiU = $this->user->getEmail();
         $paswordU = $this->user->getPassworddd();
+        $roli= $this->user->getRoliId();
 
         $statement = $this->connection->prepare($sql2);
         $statement->bindValue(":username", $emriU);
+        $statement->bindValue(":email",$emailiU);
        
         $statement->bindValue(":passworddd", $paswordU);
+        $statement->bindValue(":roleId", $roli);
        
         try {
             if ($statement->execute()) {

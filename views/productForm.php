@@ -1,4 +1,6 @@
-        
+<?PHP
+session_start();
+?>        
         
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +27,7 @@
         </form>
 
         <form action="insertProductView.php" method="post">
-        <input type="submit" name="submitbtn2" value="merri Produktet" />
+        <p><?php echo $_SESSION['pN'] ?></p>
         </form>
     </div>
 </body>

@@ -3,9 +3,9 @@ include_once '../controller/userControlles.php';
 if (isset($_POST['logINB'])) {
     
     $username = $_POST['username'];
-    $email = "veq prov";
+    $email = $_POST['username'];;
     $paswordU = $_POST["passwordddd"];
-    $roliId = 2;
+    $roliId = $_POST["type"];
 
  
    
@@ -20,7 +20,7 @@ class LogInView
 {
     public function LogInUserForm($username, $email ,$paswordU,$roliId)
     {
-        if(!isset($username) || trim($username) == ''  || !isset($paswordU) || trim($paswordU) == '' ){
+        if(!isset($username) || trim($username) == ''  || !isset($paswordU) || trim($paswordU) == '' ) {
 
             //echo "You did not fill out the required fields.";
             header("Location:../logIn.php"); 
@@ -43,6 +43,10 @@ class LogInView
                     
             
                     } else {
+                        if($roliId == 1){
+                            echo 'You are admin';
+
+                        }else{
                     ?>
                         <h1>Welcome to pocket market</h1>
                         
@@ -51,6 +55,7 @@ class LogInView
           header("Location:../homepage.php"); 
           exit();
                     }
+                }
     }
 }
 }

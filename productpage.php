@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -62,6 +65,7 @@
 
             </div>
             <div class="swiper-container">
+              <form action="insertProductView.php" method="post">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-box">
@@ -69,7 +73,9 @@
                             <div class="img-box">
                                 <img src="uje.jpg">
                             </div>
-                            <p class="detail">Uje Rugova
+                            <p class="detail"><!---Uje Rugova---><?php 
+                                                                        echo $_SESSION['pN'];
+                                                                       ?>
                                 <a href="#" class="price">Price-0.80€
                             </a>
                             </p>
@@ -81,6 +87,9 @@
                         </div>
                     </div>
                 </div>
+                </form>
+                <form action="insertProductView.php" method="post">
+                
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-box">
@@ -88,7 +97,7 @@
                             <div class="img-box">
                                 <img src="ujTh.jpg">
                             </div>
-                            <p class="detail">Uje me gaz Kllokoti
+                            <p class="detail">Uje me gaz Kllokoti 
                                 <a href="#" class="price">Price-0.85€
                               </a>
                             </p>
@@ -100,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-
+              </form>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-box">
@@ -127,7 +136,7 @@
                             <div class="img-box">
                                 <img src="vita.jpg">
                             </div>
-                            <p class="detail">Vita Jogurt
+                            <p class="detail">Vita Jogurt 
                                 <a href="#" class="price">Price-0.90€
                                       </a>
                             </p>
@@ -153,7 +162,7 @@
                             <div class="img-box">
                                 <img src="vitaqumesht.jpg">
                             </div>
-                            <p class="detail">Vita qumesht
+                            <p class="detail">Vita qumesht 
                                 <a href="#" class="price">Price-0.90€
               </a>
                             </p>
@@ -172,7 +181,7 @@
                             <div class="img-box">
                                 <img src="frutomania_malna_slider.png">
                             </div>
-                            <p class="detail">Frutomanian dredhez
+                            <p class="detail">Frutomanian dredhez 
                                 <a href="#" class="price">Price-2.15€
                   </a>
                             </p>
@@ -304,6 +313,7 @@
             </div>
 
         </div>
+     
     </div>
 
 

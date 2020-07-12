@@ -247,3 +247,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      color: white;
     
 }
+.role {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border:5px;
+   
+    
+}

@@ -25,6 +25,13 @@
 <div class="signInIn">
 <input name = "username" class ="label"  id= "label" name="" type="text" placeholder="Username"/> 
 <input name = "passwordddd" class="label" id = "label1" name="" type="password" placeholder="Password"/>
+<p style = "background-color:silver; width:160px; margin-bottom:0;"> Choose:1-Admin/2-User</p>
+<select name ="type" class = "label" id = "roli" style = "width:160px;">
+
+<option value = "roli">Choose your Role</option>
+<option value = "1">Admin</option>
+<option value = "2">User</option>
+</select>
 
 <div class="extra">
     
@@ -44,7 +51,7 @@
         <input  name = "email" class="label"  id= "label3" name="" type="text" placeholder="Email"/> 
 <input name = "paswordi"  class="label" id = "label4" name="" type="password" placeholder="Password"/>
 <input  name = "paswordi2" class="label" id = "label5" name="" type="password" placeholder="Reconfirm Password"/>
-<!---<button class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver"><b>Already have an account?</b></button>--->
+<button name ="forgot" class = "signup2" onclick="SignUp2()" style = "text-decoration: underline; font-size: 15px; background-color:silver"><b>Already have an account?</b></button>
 
 
 <input name = "submitbtn" type = "submit" id='button1' onclick="noDataR()"  value = "Registre"/>
