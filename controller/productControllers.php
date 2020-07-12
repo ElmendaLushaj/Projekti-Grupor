@@ -45,5 +45,13 @@ class ProductController
       
     
     }
+
+    public function DeleteProduct(){
+        $product2 = new Product("1","2","3","4","5");
+        $productMapper3 = new ProductMapper($product2);
+         $productMapper3->Delete();
+         return true;
+       
+    }
 }
 ?>

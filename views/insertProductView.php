@@ -27,7 +27,7 @@ if (isset($_POST['submitbtn'])) {
 }
     $view2 = new InsertView();
     $view2->FillTableRowsWithStudents();
-
+    $view2->DeleteP();
 
 
 
@@ -77,6 +77,33 @@ public function FillTableRowsWithStudents()
         $data = $controller->GetProduct();
 
         return $data;
+}
+
+public function DeleteP(){
+  
+    $controller = new ProductController();
+    
+  
+  
+    
+    $response = $controller->DeleteProduct();
+
+    if ($response) {
+        ?>
+                    <h1>Delete succsesfully</h1>
+                  
+                <?php
+               // header("Location:../homepage.php"); 
+                //exit();
+                } else {
+                ?>
+               
+                    <h1>Delete Failed</h1>
+    
+      <?php
+   
+
+}
 }
 }
 ?>

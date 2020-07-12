@@ -108,6 +108,25 @@ foreach($result as  $row)
 
 }
 
+public function Delete(){
+
+ 
+  $sql3 = "DELETE FROM Product WHERE ProductId =:idd";
+  $PID= $_POST["ProductID"];
+
+  $statement1 = $this->connection->prepare($sql3);
+  $statement1->bindParam(":idd", $PID);
+  $statement1->execute();
+ 
+
+
+
+
+
+
+
+}
+
 
 }
 

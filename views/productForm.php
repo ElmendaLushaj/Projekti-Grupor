@@ -29,6 +29,14 @@ session_start();
         <form action="insertProductView.php" method="post">
         <p><?php echo $_SESSION['pN'] ?></p>
         </form>
+
+        
+        <form action="insertProductView.php" method="post">
+        <input type="submit" name="submitbtn2" value="merri Produktet" />
+        <input type="text" name="ProductID" placeholder="Product ID'" />
+        <input type="submit" name="submitbtn3" value="Delete" />
+        <input type="submit" name="submitbtn4" value="Edit" />
+        </form>
     </div>
 </body>
 
