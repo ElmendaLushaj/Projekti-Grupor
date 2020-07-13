@@ -25,14 +25,6 @@ if (isset($_POST['submitbtn'])) {
     
     
 }
-    $view2 = new InsertView();
-    $view2->FillTableRowsWithStudents();
-    $view2->DeleteP();
-
-
-
-
-
 class InsertView
 {
     public function InsertProductForm($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath)
@@ -70,7 +62,7 @@ class InsertView
     }
 }
 
-public function FillTableRowsWithStudents()
+public function getP()
     {
         // dergojme kerkesen ne controller
         $controller = new ProductController();

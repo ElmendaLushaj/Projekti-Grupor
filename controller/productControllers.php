@@ -15,6 +15,14 @@ class ProductController
 
 
     }
+    public function get_Products(){
+       $productMapper4 = new ProductMapper($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath);
+       $produktet = $productMapper->getProducts();
+       return $produktet;
+      
+
+
+    }
    
       
       

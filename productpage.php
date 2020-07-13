@@ -1,8 +1,4 @@
-<?php
 
-session_start();
-
-?>
 <!DOCTYPE html>
 <html>
 
@@ -75,7 +71,7 @@ session_start();
                             <div class="img-box">
                                 <img src="uje.jpg">
                             </div>
-                            <p class="detail"><!---Uje Rugova---><?php echo $_SESSION['pN'] ?>
+                            <p class="detail">Uje Rugova
                                 <a href="#" class="price">Price-0.80€
                             </a>
                             </p>

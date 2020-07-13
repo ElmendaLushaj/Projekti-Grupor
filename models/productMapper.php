@@ -83,7 +83,9 @@ public function getProducts(){
 
    
   $projekt = $product->fetchAll();
-  $_SESSION['pr']=$projekt;
+  DBConnection::disconnect();
+  return $projekt;
+  
 
 
 

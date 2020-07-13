@@ -3,11 +3,11 @@ include_once '../models/userMapper.php';
 include_once '../models/userModel.php';
 class UserController
 {
-    public function InsertUser($emriU, $emailU, $passwordU)
+    public function InsertUser($username,$email, $passwordU, $roli)
     {
         //therrasim funksionet qe bejne kalkulimin e kerkeses
         //insert user ndatabase
-        $user = new User($emriU, $emailU, $passwordU , $roli);
+        $user = new User($username,$email, $passwordU, $roli);
         $userMapper2 = new UserMapper($user);
         $userMapper2->Insert();
         return true;
@@ -18,7 +18,7 @@ class UserController
 
     public function GetUser($username,$email, $passwordU , $roli)
     {
-        $user = new User($username,$email, $passwordU, $roli);
+      $user = new User($username,$email, $passwordU, $roli);
         $userMapper3= new UserMapper($user);
         $userMapper3->LogIn();
         $res = $userMapper3->LogIn();
