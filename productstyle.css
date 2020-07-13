@@ -253,12 +253,16 @@
        }
        .swiper-container{
            display: flex;
-           flex-direction: column;
+           flex-direction: row;
        }
        
 
        
-    
+.swiper-wrapper{
+
+    display: flex;
+    flex-direction: column;
+}
      
 
      

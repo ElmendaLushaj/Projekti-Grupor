@@ -1,8 +1,8 @@
 
 <?php
+include_once 'C:/xampp2/htdocs/Projekti-Grupor/controller/productControllers.php';
 
 
-include_once '../controller/productControllers.php';
 if (isset($_POST['submitbtn'])) {
     
     $ProductName= $_POST['ProductName'];

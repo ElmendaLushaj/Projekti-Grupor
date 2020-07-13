@@ -92,7 +92,7 @@
             <p class="oc" style="margin-left: 30%;"> Our collaborators:<br></p>
         </div>
         <div class="footbx2">
-            <button type="button" id="aboutus" onclick="location.href='aboutus.html'">ABOUT US</button>
+            <button type="button" id="aboutus" onclick="location.href='aboutus.php'">ABOUT US</button>
             <button type="button" id="aboutus">REGISTER</button>
         </div>
 

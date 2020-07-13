@@ -83,7 +83,7 @@ public function getProducts(){
 
    
   $projekt = $product->fetchAll();
-  DBConnection::disconnect();
+  //DBConnection::disconnect();
   return $projekt;
   
 

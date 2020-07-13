@@ -1,4 +1,5 @@
-
+<DOCTYPE html>
+<html>
 
 <head>
     <title>pocketMarket-Home</title>
@@ -40,10 +41,10 @@
 
         <div class="meny">
             <button id="homebtn" type="menu"><img id="imge" src="homeicon.JPG"></button>
-            <button id="homebtn" type="menu" onclick="location.href='Cart.html'"><img id="imge"
+            <button id="homebtn" type="menu" onclick="location.href='Cart.php'"><img id="imge"
                     src="carticon.JPG"></button>
             <button id="homebtn" type="menu"><img id="imge" src="locationicon.JPG"></button>
-            <button id="homebtn" type="menu" onclick="location.href='logIn.html'"><img id="imge"
+            <button id="homebtn" type="menu" onclick="location.href='logIn.php'"><img id="imge"
                     src="loginicon.JPG"></button>
             <button id="homebtn" type="menu"><img id="imge" src="languageicon.JPG"></button>
 
@@ -53,7 +54,7 @@
 
 
             <div class="nenmeny">
-                <button id="nmenubtn" type="menu" onclick="location.href='productpage.html'">Product</button>
+                <button id="nmenubtn" type="menu" onclick="location.href='productpage.php'">Product</button>
                 <button id="nmenubtn" type="menu">Offers</button>
                 <button id="nmenubtn" type="menu">Account</button>
                 <button id="nmenubtn" type="menu">Settings</button>
@@ -171,14 +172,14 @@
             <div class="downmenu">
 
                 <button id="footbtn">Home</button>
-                <button id="footbtn" onclick="location.href='Cart.html'">Cart</button>
+                <button id="footbtn" onclick="location.href='Cart.php'">Cart</button>
                 <button id="footbtn">Location</button>
-                <button id="footbtn" onclick="location.href='logIn.html'">Sign-in</button>
+                <button id="footbtn" onclick="location.href='logIn.php'">Sign-in</button>
                 <button id="footbtn">Language</button>
                 <p class="oc" style="margin-left: 30%;"> Our collaborators:<br></p>
             </div>
             <div class="footbx2">
-                <button type="button" id="aboutus" onclick="location.href='aboutus.html'">ABOUT US</button>
+                <button type="button" id="aboutus" onclick="location.href='aboutus.php'">ABOUT US</button>
                 <button type="button" id="aboutus">REGISTER</button>
             </div>
 
@@ -196,3 +197,4 @@
 
 </footer>
 
+</html>

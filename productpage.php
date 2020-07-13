@@ -1,4 +1,8 @@
-
+<?php
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/insertProductView.php';
+$produkt = new InsertView();
+$produktet = $produkt->getP();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -41,59 +45,77 @@
     <div class="lower">
 
         <div class="meny">
-            <button id="homebtn" type="menu" onclick="location.href='homepage.html'"><img id="imge" src="homeicon.JPG"></button>
-            <button id="homebtn" type="menu" onclick="location.href='Cart.html'"><img id="imge"
+            <button id="homebtn" type="menu" onclick="location.href='homepage.php'"><img id="imge" src="homeicon.JPG"></button>
+            <button id="homebtn" type="menu" onclick="location.href='Cart.php'"><img id="imge"
                     src="carticon.JPG"></button>
             <button id="homebtn" type="menu"><img id="imge" src="locationicon.JPG"></button>
-            <button id="homebtn" type="menu" onclick="location.href='logIn.html'"><img id="imge"
+            <button id="homebtn" type="menu" onclick="location.href='logIn.php'"><img id="imge"
                     src="loginicon.JPG"></button>
             <button id="homebtn" type="menu"><img id="imge" src="languageicon.JPG"></button>
 
         </div>
-
+        
         <div class="middle">
 
 
             <div class="nenmeny">
-                <button id="nmenubtn" type="menu" onclick="location.href='productpage.html'">Product</button>
+                <button id="nmenubtn" type="menu" onclick="location.href='productpage.php'">Product</button>
                 <button id="nmenubtn" type="menu">Offers</button>
                 <button id="nmenubtn" type="menu">Account</button>
                 <button id="nmenubtn" type="menu">Settings</button>
 
 
             </div>
+           
             <div class="swiper-container">
-              <form action="insertProductView.php" method="post">
+            
                 <div class="swiper-wrapper">
+                
+                <?php foreach($produktet as $produkt):?>
                     <div class="swiper-slide">
+                
                         <div class="slider-box">
+                       
                             <p class="time">New</p>
+                            
+
                             <div class="img-box">
-                                <img src="uje.jpg">
+                            <?php if($produkt['ProductPicPath']):?>
+                               <img src="<?php echo $produkt['ProductPicPath'];?>">
+                            <?php else: ?>
+                            <p>No image selected</p>
+                            <?php endif ?>
                             </div>
-                            <p class="detail">Uje Rugova
+                            
+                            <p class="detail"><?php echo $produkt['ProductName']?>
                                 <a href="#" class="price">Price-0.80€
                             </a>
                             </p>
                             <div class="Cart">
                                 <a href="#">Add to Cart</a>
                             </div>
-
+                           
 
                         </div>
+                       
                     </div>
+                    <?php endforeach; ?>
                 </div>
-                </form>
-                <form action="insertProductView.php" method="post">
-                
-                <div class="swiper-wrapper">
+                            
+
+            </div>
+               
+               
+               <!-- <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-box">
 
                             <div class="img-box">
-                                <img src="ujTh.jpg">
+                            <img src="keksaa.jpg">
                             </div>
-                            <p class="detail">Uje me gaz Kllokoti 
+                            
+                            </div>
+                            <p class="detail">keksa
                                 <a href="#" class="price">Price-0.85€
                               </a>
                             </p>
@@ -105,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-              </form>
+              
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-box">
@@ -306,10 +328,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--->
 
         </div>
-     
+                            
     </div>
 
 
@@ -323,14 +345,14 @@
             <div class="downmenu">
 
                 <button id="footbtn">Home</button>
-                <button id="footbtn" onclick="location.href='Cart.html'">Cart</button>
+                <button id="footbtn" onclick="location.href='Cart.php'">Cart</button>
                 <button id="footbtn">Location</button>
-                <button id="footbtn" onclick="location.href='logIn.html'">Sign-in</button>
+                <button id="footbtn" onclick="location.href='logIn.php'">Sign-in</button>
                 <button id="footbtn">Language</button>
                 <p class="oc" style="margin-left: 30%;"> Our collaborators:<br></p>
             </div>
             <div class="footbx2">
-                <button type="button" id="aboutus" onclick="location.href='aboutus.html'">ABOUT US</button>
+                <button type="button" id="aboutus" onclick="location.href='aboutus.php'">ABOUT US</button>
                 <button type="button" id="aboutus">REGISTER</button>
             </div>
 

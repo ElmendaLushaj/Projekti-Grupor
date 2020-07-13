@@ -1,6 +1,6 @@
 <?php
-include_once '../models/marketMapper.php';
-include_once '../models/marketModel.php';
+include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/marketMapper.php';
+include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/marketModel.php';
 class MarketController
 {
     public function InsertMarket($MarketName, $Address, $Phone)
