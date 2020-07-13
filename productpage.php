@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/insertProductView.php';
+require_once 'C:/xampp/htdocs/Projekti-Grupor-6/views/insertProductView.php';
 $produkt = new InsertView();
 $produktet = $produkt->getP();
 ?>
