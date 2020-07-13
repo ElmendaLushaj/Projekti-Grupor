@@ -80,49 +80,33 @@ public function getProducts(){
   
   $product = $this->connection->prepare("SELECT * FROM Product" );
    $product->execute();
-   $projekt = array();
-//$productResult = $produt->fetchAll();
-while($pr = $product->fetch() ){
- $projekt[] = $pr;
 
-
-}
-
-  foreach($projekt as $row){
-    echo $row["ProductID"]."<br/>"."Product Name: ".$row["ProductName"]."<br/>"."Product Code: ".$row["ProductCode"]."<br/>"."Producer: ".$row["Producer"]."<br/>"."Category: ".$row["Category"]."<br/>"."ProducetPicPath: ".$row["ProductPicPath"]."<br/>";
- 
-    $_SESSION['pID']=$row["ProductID"];
-    $_SESSION['pN']=$row["ProductName"];
-    $_SESSION['pC']=$row["ProductCode"];
-    $_SESSION['pP']=$row["Producer"];
-    $_SESSION['pCC'] =$row["Category"];
-    $_SESSION['pPP']=$row["ProductPicPath"];
- 
-
-  //echo $productResult[$i]["Product ID: "].$productResult[$i]["ProductID"]."<br/>"."Product Name: ".$productResult[$i]["ProductName"]."<br/>"."Product Code: ".$productResult[$i]["ProductCode"]."<br/>"."Producer: ".$productResult[$i]["Producer"]."<br/>"."Category: ".$productResult[$i]["Category"]."<br/>"."ProducetPicPath: ".$productResult[$i]["ProductPicPath"]."<br/>";
-  }
-//}
-
-
-
-/*$result = $product->fetchAll();
-
-foreach($result as  $row)
-  {
-  
-
-    $_SESSION['pID']=$row["ProductID"];
-    $_SESSION['pN']=$row["ProductName"];
-    $_SESSION['pC']=$row["ProductCode"];
-    $_SESSION['pP']=$row["Producer"];
-    $_SESSION['pCC'] =$row["Category"];
-    $_SESSION['pPP']=$row["ProductPicPath"];
    
+  $projekt = $product->fetchAll();
+  $_SESSION['pr']=$projekt;
 
+
+
+  /*foreach($projekt as $row){
+   // echo $row["ProductID"]."<br/>"."Product Name: ".$row["ProductName"]."<br/>"."Product Code: ".$row["ProductCode"]."<br/>"."Producer: ".$row["Producer"]."<br/>"."Category: ".$row["Category"]."<br/>"."ProducetPicPath: ".$row["ProductPicPath"]."<br/>";
+   $_SESSION['pID']=$row["ProductID"];
+    $_SESSION['pN']=$row["ProductName"];
+    $_SESSION['pC']=$row["ProductCode"];
+    $_SESSION['pP']=$row["Producer"];
+    $_SESSION['pCC'] =$row["Category"];
+    $_SESSION['pPP']=$row["ProductPicPath"];
+  }
+}
+foreach($result as  $row)
+  { $_SESSION['pID']=$row["ProductID"];
+    $_SESSION['pN']=$row["ProductName"];
+    $_SESSION['pC']=$row["ProductCode"];
+    $_SESSION['pP']=$row["Producer"];
+    $_SESSION['pCC'] =$row["Category"];
+    $_SESSION['pPP']=$row["ProductPicPath"];
     }
     
-    
-*/
+    */
 }
 
 public function Delete(){

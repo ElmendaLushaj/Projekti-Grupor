@@ -1,5 +1,8 @@
 <?PHP
 session_start();
+
+
+
 ?>        
         
 <!DOCTYPE html>
@@ -27,7 +30,18 @@ session_start();
         </form>
 
         <form action="insertProductView.php" method="post">
-        <p><?php echo $_SESSION['pN'] ?></p>
+        <p><?php 
+             foreach($_SESSION['pr'] as $productId){
+                 for($i = 0 ; $i <9 ; $i++){
+                    echo $productId[$i], '<br>';
+                 }
+                //Print out the product ID.
+               ;
+            }
+        
+        
+           
+     ?>
         </form>
 
         
