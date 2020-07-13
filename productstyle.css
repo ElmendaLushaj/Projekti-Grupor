@@ -180,8 +180,8 @@
 }
  .slider-box{
      margin: 50px;
-    height: 300px;
-    width: 250px;
+    height: 40vh;
+    width: 15vw;
     position: relative;
     background-color: white;
     border-radius: 5px;
@@ -191,6 +191,7 @@
     align-items: center;
     text-align: center;
     border: 1px solid rgba(187,187,187,0.40);
+    
 }
    .slider-box a{
        text-decoration: none;
