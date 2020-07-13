@@ -69,7 +69,7 @@ $produktet = $produkt->getP();
            
             <div class="swiper-container">
             
-                <div class="wiper-wrapper">
+                <div class="swiper-wrapper">
                 
                 <?php foreach($produktet as $produkt):?>
                     <div class="swiper-slide">
