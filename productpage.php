@@ -68,11 +68,12 @@ $produktet = $produkt->getP();
             </div>
            
             <div class="swiper-container">
-            
+           
                 <div class="swiper-wrapper">
                 
                 <?php foreach($produktet as $produkt):?>
                     <div class="swiper-slide">
+
                 
                         <div class="slider-box">
                        
@@ -97,12 +98,12 @@ $produktet = $produkt->getP();
                            
 
                         </div>
-                       
+                        
                     </div>
                     <?php endforeach; ?>
                 </div>
                             
-
+                
             </div>
                
                
