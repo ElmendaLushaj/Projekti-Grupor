@@ -5,14 +5,14 @@ class Product
     private $ProductName;
     private $ProductCode;
     private $Producer;
-    private $Category;
+    private $Price;
     private $ProductPicPath;
-    public function __construct($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath)
+    public function __construct($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
     {
         $this->ProductName = $ProductName;
         $this->ProductCode = $ProductCode;
         $this->Producer = $Producer;
-        $this->Category = $Category;
+        $this->Price = $Price;
         $this->ProductPicPath = $ProductPicPath;
     }
     public function getProductID()
@@ -31,9 +31,9 @@ class Product
     {
         return $this->Producer;
     }
-    public function getCategory()
+    public function getPrice()
     {
-        return $this->Category;
+        return $this->Price;
     }
     public function getProductPicPath()
     {
@@ -47,9 +47,9 @@ class Product
     {
         $this->ProductCode= $code;
     }
-    public function setCategory($name)
+    public function setPrice($name)
     {
-        $this->Category = $name;
+        $this->Price = $name;
     }
     public function setProductPicPath($path)
     {

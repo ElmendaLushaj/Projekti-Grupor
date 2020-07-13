@@ -1,3 +1,8 @@
+<?php
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/showListView.php';
+$lista = new InsertView();
+$listat = $lista->getShoppingList();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -31,15 +36,17 @@
                     <th>Quantity</th>
                     <th>Total</th>
                 </tr>
+                <?php foreach($listat as $list):?>
                 <tr>
                     <td><button id="remove">X</button></td>
-                    <td><img id="pro" src="uje.jpg" alt="fotoja e produktit"></td>
-                    <td>Rugova water</td>
-                    <td>0.19$</td>
-                    <td>3</td>
-                    <td>0.57$</td>
+                    <td><img id="pro" src="<?php echo $list['ProductPath']?>" alt="fotoja e produktit"></td>
+                    <td><?php echo $list['ProductName']?></td>
+                    <td><?php echo number_format($list['ProductPrice'], 2, '.', ',') ?>$</td>
+                    <td><?php echo $list['Quantity']?></td>
+                    <td><?php echo number_format($list['Total'], 2, '.', ',') ?>$</td>
                 </tr>
-                <tr>
+                <?php endforeach; ?>
+               <!--- <tr>
                     <td><button id="remove">X</button></td>
                     <td><img id="pro" src="sempre.jpg" alt="fotoja e produktit"></td>
                     <td>Sempre biscuits - </td>
@@ -54,7 +61,7 @@
                     <td>0.80$</td>
                     <td>1</td>
                     <td>0.80$</td>
-                </tr>
+                </tr>--->
                 <tr>
 
                     <td colspan="2"><input class="label" id="label" name="" type="text" placeholder="Coupon code..." /> </td>

@@ -20,18 +20,18 @@ class ProductMapper extends DBConnection
     public function Insert()
     {
 
-        $sql = "INSERT INTO [Product] (ProductName,ProductCode,Producer,Category,ProductPicPath) VALUES (:ProductName,:ProductCode,:Producer,:Category,:ProductPicPath)";
+        $sql = "INSERT INTO [Product] (ProductName,ProductCode,Producer,Price,ProductPicPath) VALUES (:ProductName,:ProductCode,:Producer,:price,:ProductPicPath)";
        
         $ProductName= $this->product->getProductName();
         $ProductCode = $this->product->getProductCode();
         $Producer = $this->product->getProducer();
-        $Category = $this->product->getCategory();
+        $Price = $this->product->getPrice();
         $ProductPicPath = $this->product->getProductPicPath();
         $statement = $this->connection->prepare($sql);
         $statement->bindParam(":ProductName", $ProductName);
         $statement->bindParam(":ProductCode",$ProductCode);
         $statement->bindParam(":Producer", $Producer);
-        $statement->bindParam(":Category",$Category);
+        $statement->bindParam(":price",$Price);
         $statement->bindParam(":ProductPicPath", $ProductPicPath);
         $statement->execute();
        /* $statement->execute(array(

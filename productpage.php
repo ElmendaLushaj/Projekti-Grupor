@@ -89,7 +89,7 @@ $produktet = $produkt->getP();
                             </div>
                             
                             <p class="detail"><?php echo $produkt['ProductName']?>
-                                <a href="#" class="price">Price-0.80€
+                                <a href="#" class="price"><?php echo number_format($produkt['Price'], 2, '.', ',')?>
                             </a>
                             </p>
                             <div class="Cart">

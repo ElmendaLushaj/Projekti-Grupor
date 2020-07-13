@@ -30,14 +30,18 @@
         <br>  the products and markets that you express interest.
         <br> For any ambiguity feel free to contact us.
     </h4>
+    
         <div class="textarea">
             <h3 style="padding-left:15%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> QUESTION AND CRITIC US</h3>
-            <textarea id="area" name="w3review" rows="10" cols="50">
+            <form action="models/insertAboutUs.php" method="post">
+            <input id="area" name="w3review" rows="10" cols="50"/>
                
-                </textarea>
+
     
-    <button class="button">Send</button>
-    </div>
+    <input name ="submitB" class="button" type = "submit"  value= "Send" />
+    </form>
+         </div>
+
 </div>
 <div class="FOTOBox">
     <img src="logoja.png" style="width:40vw; height:70vh;padding-top: 25px; padding-bottom: 10px;">

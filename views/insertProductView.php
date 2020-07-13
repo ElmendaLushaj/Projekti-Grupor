@@ -8,7 +8,7 @@ if (isset($_POST['submitbtn'])) {
     $ProductName= $_POST['ProductName'];
     $ProductCode= $_POST['ProductCode'];
     $Producer = $_POST["Producer"];
-    $Category = $_POST["Category"];
+    $Price = $_POST["Category"];
     $ProductPicPath=$_FILES['ProductPicPath']['name'];
     $filetmpname = $_FILES['ProductPicPath']['tmp_name'];
     //folder where images will be uploaded
@@ -20,16 +20,16 @@ if (isset($_POST['submitbtn'])) {
  
    
     $view = new InsertView();
-    $view->InsertProductForm($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath);
+    $view->InsertProductForm($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
 
     
     
 }
 class InsertView
 {
-    public function InsertProductForm($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath)
+    public function InsertProductForm($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
     {
-        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Category) || trim($Category) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''){
+        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''){
 
             echo "You did not fill out the required fields.";
           
@@ -40,7 +40,7 @@ class InsertView
              
         // dergojme kerkesen ne controller
         $controller = new ProductController();
-        $response = $controller->InsertProduct($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath);
+        $response = $controller->InsertProduct($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
 
         if ($response) {
             ?>
@@ -66,7 +66,7 @@ public function getP()
     {
         // dergojme kerkesen ne controller
         $controller = new ProductController();
-        $data = $controller->GetProduct();
+        $data = $controller->get_Products();
 
         return $data;
 }

@@ -18,7 +18,7 @@
             <input type="text" name="ProductName" placeholder="Product Name" />
             <input type="text" name="ProductCode" placeholder="Product Code" />
             <input type="text" name="Producer" placeholder="Producer" />
-            <input type="text" name="Category" placeholder="Category" />
+            <input type="text" name="Category" placeholder="Price" />
             <input type="file" name="ProductPicPath" accept="image/x-png,image/gif,image/jpeg" placeholder="Product Picture" />
             <input type="submit" name="submitbtn" value="Register" />
         </form>
