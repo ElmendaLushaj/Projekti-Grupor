@@ -1,3 +1,14 @@
+<?php
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/showProductView.php';
+$slide = new InsertView();
+$sliderat = $slide->getSliderProducts();
+
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/showSliderMarketView.php';
+$slide1 = new InsertView2();
+$sliderat1 = $slide1->getSliderMarket();
+
+?>
+
 <DOCTYPE html>
 <html>
 
@@ -64,14 +75,16 @@
             <div class="slides">
                 <div class="slideshow-container">
 
-
+                <?php foreach($sliderat1 as $slide1):?>
                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="lidl.jpg" style="width:100%">
+                        
+
+                        <img src="<?PHP echo $slide1['SliderMarketPicPath']?>" style="width:100%">
 
                     </div>
+                    <?php  endforeach; ?>
 
-                    <div class="mySlides fade">
+                 <!--  <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
                         <img src="edeka.jpg" style="width:100%">
 
@@ -82,7 +95,7 @@
                         <img src="aldi.jpg" style="width:100%">
 
                     </div>
-
+                     --->
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -101,14 +114,15 @@
             </div>
 
             <div class=" photos3">
-
+            <?php foreach($sliderat as $slide): ?>
                 <div class="photos2 fade">
 
-                    <img id="photo" src="jogurt.jpg">
+                    <img id="photo" src="<?php echo $slide['SliderProductPicPath'];?>">
 
                 </div>
+                <?php endforeach?>
 
-                <div class="photos2 fade">
+                <!---<div class="photos2 fade">
 
                     <img id="photo" src="keksaa.jpg">
 
@@ -119,7 +133,7 @@
                     <img id="photo" src="ujTh.jpg">
 
                 </div>
-
+               --->
 
                 <div style="text-align:center">
                     <span class="pikat2"></span>
