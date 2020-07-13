@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/xampp/htdocs/Projekti-Grupor-6/views/insertProductView.php';
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/insertProductView.php';
 $produkt = new InsertView();
 $produktet = $produkt->getP();
 ?>
@@ -105,7 +105,6 @@ $produktet = $produkt->getP();
                             
                 
             </div>
-               
                
                <!-- <div class="swiper-wrapper">
                     <div class="swiper-slide">

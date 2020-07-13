@@ -16,7 +16,7 @@ class ProductController
 
     }
     public function get_Products(){
-       $productMapper4 = new ProductMapper($ProductName, $ProductCode, $Producer,$Category,$ProductPicPath);
+       $productMapper4 = new ProductMapper("1","2","3","4","5");
        $produktet = $productMapper->getProducts();
        return $produktet;
       
