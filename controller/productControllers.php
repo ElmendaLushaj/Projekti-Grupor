@@ -24,40 +24,18 @@ class ProductController
 
     }
    
-      
-      
-      
-      
-      
-      
-      
-      
-      
    
-
-   /* public function GetProduct()
-    {
-       
-        
-        
-      $productMapper2 = new ProductMapper("1" , "2" , "3" , "4" , "5");
-        $res = $productMapper2->getProducts();
-        return  $res;
-      
-
-     
-  
- 
-       
-      
-      
-    
-    }*/
-
     public function DeleteProduct($ProductID){
        // $product2 = new Product("1","2","3","4","5");
         $productMapper3 = new ProductMapper();
          $productMapper3->Delete();
+         return true;
+       
+    }
+    public function EditProduct($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
+        $product2 = new Product($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
+        $productMapper3 = new ProductMapper();
+         $productMapper3->Edit($idd,$product2);
          return true;
        
     }

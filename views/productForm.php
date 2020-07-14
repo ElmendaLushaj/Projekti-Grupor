@@ -21,6 +21,9 @@
             <input type="text" name="Category" placeholder="Price" />
             <input type="file" name="ProductPicPath" accept="image/x-png,image/gif,image/jpeg" placeholder="Product Picture" />
             <input type="submit" name="submitbtn" value="Register" />
+            <input type="submit" name="submitbtn4" value="Edit" />
+            <input type="text" name="ProductID" placeholder="Product ID'" />
+        <input type="submit" name="submitbtn3" value="Delete" />
         </form>
 
         <form action="insertProductView.php" method="post">
@@ -30,9 +33,8 @@
         
         <form action="insertProductView.php" method="post">
         <input type="submit" name="submitbtn2" value="merri Produktet" />
-        <input type="text" name="ProductID" placeholder="Product ID'" />
-        <input type="submit" name="submitbtn3" value="Delete" />
-        <input type="submit" name="submitbtn4" value="Edit" />
+       
+       
         </form>
     </div>
 </body>

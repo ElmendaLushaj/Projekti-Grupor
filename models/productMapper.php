@@ -43,34 +43,29 @@ class ProductMapper extends DBConnection
     }
 
 
-    public function Update()
+    public function Edit($idd,$product)
     {
-        /*$sql2 = 'SELECT  COUNT(*) AS "num_user"  FROM  [User]  WHERE FirstName = :username AND Passworddd =:passworddd';
-        
-        $emriU = $this->user->getFirstName();
-        
-        $paswordU = $this->user->getPassworddd();
-
-        $statement = $this->connection->prepare($sql2);
-        $statement->bindValue(":username", $emriU);
-      
-        $statement->bindValue(":passworddd", $paswordU);
+      $this->product = $product;
+      $sql = "UPDATE Product SET ProductName=:productName, ProductCode=:productCode, Producer=:producer,Price=:price, ProductPicPath=:productPicPath WHERE ProductID=$idd";
+     // $statement = $this->connection->prepare($sql);
        
-        try {
-            if ($statement->execute()) {
-              $row = $statement->fetchAll();
-           }         
-           // There should be only 1 row;
-           if ( $row[0]["num_user"] != 1) {
-             return false;
-           } else {
-             
-             return true; 
-           }
-        } catch (Exception $e) {
-            echo 'Caught exception: ', $e->getMessage();
-        
-    }*/
+      
+
+      $ProductName= $this->product->getProductName();
+      $ProductCode = $this->product->getProductCode();
+      $Producer = $this->product->getProducer();
+      $Price = $this->product->getPrice();
+      $ProductPicPath = $this->product->getProductPicPath();
+      $statement = $this->connection->prepare($sql);
+      
+      $statement->bindParam(":productName", $ProductName);
+      $statement->bindParam(":productCode",$ProductCode);
+      $statement->bindParam(":producer", $Producer);
+      $statement->bindParam(":price",$Price);
+      $statement->bindParam(":productPicPath", $ProductPicPath);
+      $statement->execute();
+   
+    
 }   
 
 
@@ -86,29 +81,6 @@ public function getProducts(){
   //DBConnection::disconnect();
   return $projekt;
   
-
-
-
-  /*foreach($projekt as $row){
-   // echo $row["ProductID"]."<br/>"."Product Name: ".$row["ProductName"]."<br/>"."Product Code: ".$row["ProductCode"]."<br/>"."Producer: ".$row["Producer"]."<br/>"."Category: ".$row["Category"]."<br/>"."ProducetPicPath: ".$row["ProductPicPath"]."<br/>";
-   $_SESSION['pID']=$row["ProductID"];
-    $_SESSION['pN']=$row["ProductName"];
-    $_SESSION['pC']=$row["ProductCode"];
-    $_SESSION['pP']=$row["Producer"];
-    $_SESSION['pCC'] =$row["Category"];
-    $_SESSION['pPP']=$row["ProductPicPath"];
-  }
-}
-foreach($result as  $row)
-  { $_SESSION['pID']=$row["ProductID"];
-    $_SESSION['pN']=$row["ProductName"];
-    $_SESSION['pC']=$row["ProductCode"];
-    $_SESSION['pP']=$row["Producer"];
-    $_SESSION['pCC'] =$row["Category"];
-    $_SESSION['pPP']=$row["ProductPicPath"];
-    }
-    
-    */
 }
 
 public function Delete(){
@@ -121,13 +93,6 @@ public function Delete(){
   $statement1->bindParam(":idd", $PID);
   $statement1->execute();
  
-
-
-
-
-
-
-
 }
 
 

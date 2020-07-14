@@ -9,12 +9,13 @@ if (isset($_POST['submitbtn'])) {
     $ProductCode= $_POST['ProductCode'];
     $Producer = $_POST["Producer"];
     $Price = $_POST["Category"];
+   // $ProductPicPath =$_POST["ProductPicPath"];
     $ProductPicPath=$_FILES['ProductPicPath']['name'];
-    $filetmpname = $_FILES['ProductPicPath']['tmp_name'];
+    //$filetmpname = $_FILES['ProductPicPath']['tmp_name'];
     //folder where images will be uploaded
-    $folder = 'imagesuploadedf/.$ProductPicPath';
+   // $folder = 'imagesuploadedf/.$ProductPicPath';
     //function for saving the uploaded images in a specific folder
-    move_uploaded_file($ProductPicPath,$folder);
+   // move_uploaded_file($ProductPicPath,$folder);
 
 
  
@@ -35,6 +36,27 @@ if (isset($_POST['submitbtn3'])) {
    
     $view = new InsertView();
     $view->DeleteP($ProductID);
+
+    
+    
+
+}
+if (isset($_POST['submitbtn4'])) {
+    $idd= $_POST['ProductID'];
+    $ProductName= $_POST['ProductName'];
+    $ProductCode= $_POST['ProductCode'];
+    $Producer = $_POST["Producer"];
+    $Price = $_POST["Category"];
+    $ProductPicPath=$_FILES['ProductPicPath']['name'];
+    
+    //function for saving the uploaded images in a specific folder
+   
+
+
+ 
+   
+    $view = new InsertView();
+    $view->editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
 
     
     
@@ -91,9 +113,6 @@ public function DeleteP($ProductID){
   
     $controller = new ProductController();
     
-  
-  
-    
     $response = $controller->DeleteProduct($ProductID);
 
     if ($response) {
@@ -110,6 +129,31 @@ public function DeleteP($ProductID){
     
       <?php
    
+
+}
+}
+
+public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
+
+    $controller = new ProductController();
+    $response = $controller->EditProduct($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
+    if ($response) {
+        ?>
+                    <h1>Editit succsesfully</h1>
+                  
+                <?php
+               // header("Location:../homepage.php"); 
+                //exit();
+                } else {
+                ?>
+               
+                    <h>Edit Failed</h1>
+    
+      <?php
+   
+
+
+
 
 }
 }
