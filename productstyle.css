@@ -226,12 +226,14 @@
 }
 
 .price {
+   
     color: #ffffff;
     background-color: firebrick;
     line-height: 20px;
 }
 
 .Cart {
+    
     position: absolute;
     bottom: 0px;
     height: 25px;

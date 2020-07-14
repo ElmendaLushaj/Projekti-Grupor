@@ -24,7 +24,23 @@ if (isset($_POST['submitbtn'])) {
 
     
     
+
 }
+if (isset($_POST['submitbtn3'])) {
+    
+    $ProductID= $_POST['ProductID'];
+
+
+ 
+   
+    $view = new InsertView();
+    $view->DeleteP($ProductID);
+
+    
+    
+
+}
+
 class InsertView
 {
     public function InsertProductForm($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
@@ -71,14 +87,14 @@ public function getP()
         return $data;
 }
 
-public function DeleteP(){
+public function DeleteP($ProductID){
   
     $controller = new ProductController();
     
   
   
     
-    $response = $controller->DeleteProduct();
+    $response = $controller->DeleteProduct($ProductID);
 
     if ($response) {
         ?>

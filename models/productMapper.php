@@ -10,16 +10,16 @@ class ProductMapper extends DBConnection
     private  $product;
     private $connection;
 
-    public function __construct($product)
+    public function __construct()
     {
-       $this->product = $product;
+       
        $this->connection = $this->getConnection();
         
     }
 
-    public function Insert()
+    public function Insert($product)
     {
-
+        $this->product = $product;
         $sql = "INSERT INTO [Product] (ProductName,ProductCode,Producer,Price,ProductPicPath) VALUES (:ProductName,:ProductCode,:Producer,:price,:ProductPicPath)";
        
         $ProductName= $this->product->getProductName();

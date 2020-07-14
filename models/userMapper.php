@@ -6,16 +6,16 @@ class UserMapper extends DBConnection
     private  $user;
     private $connection;
 
-    public function __construct($user)
+    public function __construct()
     {
-       $this->user = $user;
+      
        $this->connection = $this->getConnection();
         
     }
 
-    public function Insert()
+    public function Insert($user)
     {
-
+      $this->user = $user;
         $sql = "INSERT INTO [User] (Firstname,Email,Passworddd , RoleId) VALUES (:firstname,:email,:passworddd,:roli)";
        
         $emriU = $this->user->getFirstName();
@@ -37,8 +37,9 @@ class UserMapper extends DBConnection
     }
 
 
-    public function Login()
+    public function Login($user)
     {
+      $this->user = $user;
         $sql2 = ' SELECT  COUNT(*) AS "num_user"  FROM  [User]  WHERE (FirstName = :username or Email = :email) AND Passworddd =:passworddd AND RoleId =:roleId' ;
         
         $emriU = $this->user->getFirstName();
