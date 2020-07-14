@@ -26,7 +26,7 @@
 
 
 <form action="views/logInForm.php" method="post" id = "signIn" class="signIn">
-<div class="signInIn">
+ <div class="signInIn">
 <input name = "username" class ="label"  id= "label" name="" type="text" placeholder="Username"/> 
 <input name = "passwordddd" class="label" id = "label1" name="" type="password" placeholder="Password"/>
 <p style = "background-color:silver; width:160px; margin-bottom:0;"> Choose:1-Admin/2-User</p>

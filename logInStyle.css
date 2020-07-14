@@ -272,19 +272,22 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .border1{
 
           
-  width: 100%;
-  margin-left: 0;
-    }
-    .box1{
+        width: 100%;
         margin-left: 0;
     }
+    .box1{
+        width:80%;
+        
+    }
     .footer{
-        width:100%;
+       
+        width: 100%;
         
     }
     .middlepart{
         margin-left:15%;
     }
+    
     
 
 }

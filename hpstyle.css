@@ -164,7 +164,7 @@
     color: rgb(173, 4, 4);
     
     background-color: white;
-    width: 150px;
+    width:150px;
     height: auto;
     margin-top: 20%;
     border-color: white;
@@ -423,7 +423,74 @@
     
 }
 @media only screen and  (max-width: 375px){
-    .bodyyy{
-        width:375px;
+    .footbx3{
+        margin-left: 10%;
+      }
+      .footbx2{
+          margin-top: 5px;
+          margin-bottom: 5px;
+      }
+      .bodyy{
+          width: 100%;
+        
+          margin-right: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+      }
+    .footer{
+       
+        width: 100%;
+        
+        
+    }
+    .middlepart{
+        margin-left:15%;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+    #nmenubtn{
+    font-size: 20px;
+    width: auto;
+    margin-left:5%;
+    }
+    .nenmeny{
+        display: flex;
+        flex-direction: row;
+    }
+    .photos3{
+        width:600px;
+        height: 400px;
+        margin-left: 20%;
+        margin-top: 10% ;
+    }
+    .slides{
+        margin-left: 20%;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .pocketMarket{
+        font-size: 30px;
+        margin-right: 25%;
+    }
+    .rks{
+        margin-right: 25%;
+    }.over{
+        margin-left:0;
+    }
+    .meny{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    #homebtn{
+        margin-left: 7%;
     }
 }
