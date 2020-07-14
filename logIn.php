@@ -1,8 +1,12 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
     <title>PocketMarket - Sign in </title>
-    <link rel="stylesheet" type="text/css" href="logInStyle.css"/>
+   <!--- <link rel="stylesheet" type="text/css" href="logInStyle.css"/>-->
+   <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="logInStyle.css"/>
     <script src = "logInJS.js">
 
     </script>
@@ -28,6 +32,7 @@
 <p style = "background-color:silver; width:160px; margin-bottom:0;"> Choose:1-Admin/2-User</p>
 <select name ="type" class = "label" id = "roli" style = "width:160px;">
 
+
 <option value = "roli">Choose your Role</option>
 <option value = "1">Admin</option>
 <option value = "2">User</option>
@@ -38,7 +43,9 @@
    
 <button  name="pass"  class = "signup2" style = "text-decoration: underline; font-size: 15px; background-color:silver; margin-left: 15px;" onclick = "Refresh()"><b>Forgot Password?</b></button>
 </div>
-
+<?php if (isset($val)): ?>
+      	<span><?php echo $val; ?></span>
+      <?php endif ?>
 
 <button name = "logINB" id='button1' onclick="noData()">Sign-in</button>
 </div>
@@ -71,6 +78,7 @@
     <a href="https://www.instagram.com/"><img   id ="social" src = "instagram.png"/></a>
 
 </div>
+
     </div>
 </div>
 </div>
@@ -78,6 +86,7 @@
 
 
 </body>
+<footer>
 <div class="footer">
     <div class="pckMrk" style="font-family: Calibri; font-size: 40px; ">pocketMarket</div>
 

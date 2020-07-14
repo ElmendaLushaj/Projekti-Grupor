@@ -254,3 +254,37 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    
     
 }
+@media only screen and  (max-width: 375px){
+    .footbx3{
+      margin-left: 10%;
+    }
+    .footbx2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .bodyy{
+        width: 100%;
+      
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .border1{
+
+          
+  width: 100%;
+  margin-left: 0;
+    }
+    .box1{
+        margin-left: 0;
+    }
+    .footer{
+        width:100%;
+        
+    }
+    .middlepart{
+        margin-left:15%;
+    }
+    
+
+}

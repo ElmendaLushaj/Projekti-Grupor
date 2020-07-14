@@ -1,5 +1,5 @@
 <?php
-include_once '../controller/userControlles.php';
+include_once 'C:/xampp2/htdocs/Projekti-Grupor/controller/userControlles.php';
 if (isset($_POST['logINB'])) {
     
     $username = $_POST['username'];
@@ -28,6 +28,8 @@ if (isset($_POST['pass'])) {
 
 class LogInView
 {
+
+     
     public function LogInUserForm($username, $email ,$paswordU,$roliId)
     {
         if(!isset($username) || trim($username) == ''  || !isset($paswordU) || trim($paswordU) == '' ) {
@@ -46,10 +48,10 @@ class LogInView
 
         if ($response == false) {
             ?>
-                        <h1>You dont have an account</h1>
                     <?php
-                     header("Location:../logIn.php"); 
-                     exit();
+                     //header("Location:../logIn.php"); 
+                     //exit();
+                    
                     
             
                     } else {
@@ -68,11 +70,11 @@ class LogInView
                 }
     }
 }
+
+
+
+
+
+
 }
-
-
-
-
-
-
 ?>
