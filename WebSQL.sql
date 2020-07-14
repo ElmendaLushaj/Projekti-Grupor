@@ -217,15 +217,17 @@ INSERT [dbo].[Market] ([MarketID], [MarketName], [Address], [Phone]) VALUES (6, 
 
 
 SET IDENTITY_INSERT [dbo].[Market] OFF
+use[pocketMarket]
+
 
 SET IDENTITY_INSERT [dbo].[Product] ON 
 
-INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (1, N'Abi Jogurt',  530517,N'Abi',N'Dairy',N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\jogurt.jpg')
-INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (2, N'Buena Vita', 390465,N'Liri',N'Sweets',N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\keksaa.jpg')
-INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (3, N'Sempre Baby-Biscuits', 390574,N'Liri',N'Sweets',N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\sempre.jpg')
-INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (4, N'Uje Rugove', 907987,N'Rugove',N'Drinks',N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\uje.jpg')
-INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (5, N'Uje Kllokoti', 390544,N'Banja e Kllokotit',N'Drinks',N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\ujTh.jpg')
-INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (6, N'Vita Slim Fit', 390458,N'Devolli Corporation',N'Dairy',N'C:\Users\DELL\OneDrive\Desktop\WEB\Projekti-Grupor\vita.jpg')
+INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (1, N'Abi Jogurt',  530517,N'Abi',N'Dairy',N'jogurt.jpg')
+INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (2, N'Buena Vita', 390465,N'Liri',N'Sweets',N'keksaa.jpg')
+INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (3, N'Sempre Baby-Biscuits', 390574,N'Liri',N'Sweets',N'sempre.jpg')
+INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (4, N'Uje Rugove', 907987,N'Rugove',N'Drinks',N'uje.jpg')
+INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (5, N'Uje Kllokoti', 390544,N'Banja e Kllokotit',N'Drinks',N'ujTh.jpg')
+INSERT [dbo].[Product] ([ProductID], [ProductName], [ProductCode],[Producer], [Category],[ProductPicPath]) VALUES (6, N'Vita Slim Fit', 390458,N'Devolli Corporation',N'Dairy',N'vita.jpg')
 SET IDENTITY_INSERT [dbo].[Product] OFF
 
 SET IDENTITY_INSERT [dbo].[SliderProduct] ON 
@@ -331,4 +333,17 @@ DROP TABLE [User]
 
 
 USE [pocketMarket]
-DROP TABLE [ADMIN]
+
+CREATE TABLE [dbo].[AboutUs](
+	[AboutUsID] [int] IDENTITY (1,1) NOT NULL,
+	[Comment] [varchar](255) NOT NULL,
+
+PRIMARY KEY CLUSTERED 
+(
+	[AboutUsID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
