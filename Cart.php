@@ -8,7 +8,10 @@ $listat = $lista->getShoppingList();
 
 <head>
     <title>Your Cart</title>
-    <link rel="stylesheet" type="text/css" href="cartscc.css" />
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="cartscc.css" />
 </head>
 
 <body>

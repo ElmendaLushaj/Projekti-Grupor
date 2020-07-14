@@ -253,3 +253,37 @@ td {
      color: white;
     
 }
+@media only screen and  (max-width: 375px){
+    
+    .footbx2{
+          margin-top: 5px;
+          margin-bottom: 5px;
+    }
+     
+    .footer{
+       display: flex;
+       flex-direction: column;
+        width: 100%;
+
+        
+        
+    }
+    .footbx3{
+        
+        margin-left: 10%;
+
+    }
+    .meny{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    #homebtn{
+        margin-left: 7%;
+    }
+    
+ 
+}
