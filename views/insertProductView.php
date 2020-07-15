@@ -1,6 +1,6 @@
 
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/controller/productControllers.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/controller/productControllers.php');
 
 
 if (isset($_POST['submitbtn'])) {

@@ -1,5 +1,5 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/DbConnection.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/DbConnection.php');
 //include_once 'sliderMarketModel.php';
 class SliderMarketMapper extends DBConnection
 {

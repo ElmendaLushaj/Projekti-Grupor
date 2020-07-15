@@ -1,6 +1,6 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/userMapper.php';
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/userModel.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/userMapper.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/userModel.php');
 class UserController
 {
     public function InsertUser($username,$email, $passwordU, $roli)

@@ -1,5 +1,5 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/controller/userControlles.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/controller/userControlles.php');
 if (isset($_POST['logINB'])) {
     
     $username = $_POST['username'];

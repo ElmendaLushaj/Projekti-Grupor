@@ -1,6 +1,6 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/aboutUsMapper.php';
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/aboutUsModel.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/aboutUsMapper.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/aboutUsModel.php');
 class AboutUsController
 {
     public function InsertKoment($comment)

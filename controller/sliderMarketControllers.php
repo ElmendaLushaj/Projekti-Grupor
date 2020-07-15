@@ -1,6 +1,6 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/sliderMarketMapper.php';
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/models/sliderMarketModel.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/sliderMarketMapper.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/sliderMarketModel.php');
 class SliderMarketController
 {
     public function GetSliderMarket()

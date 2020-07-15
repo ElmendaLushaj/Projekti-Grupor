@@ -1,5 +1,5 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/controller/aboutUsController.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/controller/aboutUsController.php');
 if (isset($_POST['submitB'])) {
     
     $comment= $_POST['w3review'];
