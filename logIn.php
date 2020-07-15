@@ -33,7 +33,7 @@
 <select name ="type" class = "label" id = "roli" style = "width:160px;">
 
 
-<option value = "roli">Choose your Role</option>
+<option value = "0">Choose your Role</option>
 <option value = "1">Admin</option>
 <option value = "2">User</option>
 </select>

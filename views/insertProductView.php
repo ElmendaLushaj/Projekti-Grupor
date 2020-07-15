@@ -67,12 +67,20 @@ class InsertView
 {
     public function InsertProductForm($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
     {
-        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' ){
+        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' ||  !is_numeric($ProductCode) ||  !is_numeric($ProductCode)){
 
-            echo "You did not fill out the required fields.";
-            header("Location:../productForm.php"); 
-            exit();
-         
+            
+          
+                    
+
+                    echo '<script type="text/javascript">'; 
+                    echo 'alert("You filled the fields incorrectly!");'; 
+                    echo 'window.location.href = "../productForm.php";';
+                    echo '</script>';
+                    
+                    
+                
+                    
 
 
          }else{
@@ -178,11 +186,13 @@ echo '</script>';
 }
 
 public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
-    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' || !is_numeric($idd)){
+    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' || !is_numeric($idd) || !is_numeric($Price) ||  !is_numeric($ProductCode)){
+       
         echo '<script type="text/javascript">'; 
-     
+        echo 'alert("You filled the fields incorrectly!");'; 
         echo 'window.location.href = "../productForm.php";';
-        echo '</script>';}
+        echo '</script>';
+        }
          else{
     $controller = new ProductController();
     $response = $controller->EditProduct($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);

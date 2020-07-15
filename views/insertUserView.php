@@ -1,5 +1,5 @@
 <?php
-include_once ($_SERVER['DOCUMENT_ROOT'].'/controller/userControlles.php');
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/controller/userControlles.php');
 if (isset($_POST['submitbtn'])) {
     
     $emriU = $_POST['emri'];
