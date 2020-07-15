@@ -48,6 +48,15 @@ class LogInView
 
         if ($response == false) {
             ?>
+            <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Invalid Username or Password!");'; 
+echo 'window.location.href = "../logIn.php";';
+echo '</script>';
+
+
+?>
                     <?php
                      //header("Location:../logIn.php"); 
                      //exit();
@@ -62,7 +71,7 @@ class LogInView
 
                         }else{
                     ?>
-                        <h1>Welcome to pocket market</h1>
+                       
                         
         
           <?php

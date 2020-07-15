@@ -70,7 +70,7 @@ class InsertView
         if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' ){
 
             echo "You did not fill out the required fields.";
-            header("Location:productForm.php"); 
+            header("Location:../productForm.php"); 
             exit();
          
 
@@ -83,15 +83,30 @@ class InsertView
 
         if ($response) {
             ?>
-                        <h1>Registered Successfully</h1>
+                        
                       
                     <?php
-                   // header("Location:../homepage.php"); 
-                    //exit();
+                    
+
+                    echo '<script type="text/javascript">'; 
+                    echo 'alert("Registered Successfully!");'; 
+                    echo 'window.location.href = "../productForm.php";';
+                    echo '</script>';
+                    
+                    
+                
                     } else {
                     ?>
                    
-                        <h1>Register Failed</h1>
+                   <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Registered Failed!");'; 
+echo 'window.location.href = "../productForm.php";';
+echo '</script>';
+
+
+?>
         
           <?php
          // header("Location:../logIn.php"); 
@@ -113,7 +128,7 @@ public function getP()
 public function DeleteP($ProductID){
   
     if(!isset($ProductID) || trim($ProductID) == '' ){
-        header("Location:productForm.php");    
+        header("Location:../productForm.php");    
          exit();}
          else{
     $controller = new ProductController();
@@ -122,7 +137,15 @@ public function DeleteP($ProductID){
 
     if ($response) {
         ?>
-                    <h1>Delete succsesfully</h1>
+                                   <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Deleted Successfully!");'; 
+echo 'window.location.href = "../productForm.php";';
+echo '</script>';
+
+
+?>
                   
                 <?php
                // header("Location:../homepage.php"); 
@@ -130,7 +153,15 @@ public function DeleteP($ProductID){
                 } else {
                 ?>
                
-                    <h1>Delete Failed</h1>
+               <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Deleted Failed!");'; 
+echo 'window.location.href = "productForm.php";';
+echo '</script>';
+
+
+?>
     
       <?php
    
@@ -140,22 +171,37 @@ public function DeleteP($ProductID){
 
 public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
     if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''){
-        header("Location:productForm.php");    
+        header("Location:../productForm.php");    
          exit();}
          else{
     $controller = new ProductController();
     $response = $controller->EditProduct($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
     if ($response) {
         ?>
-                    <h1>Edited Successfully!</h1>
+                           <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Edited Successfully!");'; 
+echo 'window.location.href = "../productForm.php";';
+echo '</script>';
+
+
+?>
+<?php
                   
-                <?php
-               header("Location:productForm.php"); 
-               exit();
+                
                 } else {
                 ?>
                
-                    <h>Edit Failed!</h1>
+               <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Editing Failed!");'; 
+echo 'window.location.href = "../productForm.php";';
+echo '</script>';
+
+
+?>
     
       <?php
    
