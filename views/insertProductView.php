@@ -67,7 +67,7 @@ class InsertView
 {
     public function InsertProductForm($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
     {
-        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' || !is_nan($ProductCode) || !is_nan($Price)){
+        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' ){
 
             echo "You did not fill out the required fields.";
             header("Location:productForm.php"); 
@@ -94,7 +94,7 @@ class InsertView
                         <h1>Register Failed</h1>
         
           <?php
-         // header("Location:../logIb.php"); 
+         // header("Location:../logIn.php"); 
          // exit();
           echo "Register Failed";
                     }
@@ -112,7 +112,7 @@ public function getP()
 
 public function DeleteP($ProductID){
   
-    if(!isset($ProductID) || trim($ProductID) == '' ||!is_nan($ProductID)){
+    if(!isset($ProductID) || trim($ProductID) == '' ){
         header("Location:productForm.php");    
          exit();}
          else{
@@ -139,7 +139,7 @@ public function DeleteP($ProductID){
 }
 
 public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
-    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''||!isset($idd) || trim($idd) == '' ||!is_nan($idd) || !is_nan($ProductCode) || !isset($Price)){
+    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''){
         header("Location:productForm.php");    
          exit();}
          else{
@@ -150,8 +150,8 @@ public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$Product
                     <h1>Edited Successfully!</h1>
                   
                 <?php
-               // header("Location:../homepage.php"); 
-                //exit();
+               header("Location:productForm.php"); 
+               exit();
                 } else {
                 ?>
                

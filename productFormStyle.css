@@ -19,7 +19,8 @@
 }
 
 .slider-box {
-    margin: 50px;
+    margin: 30px;
+    margin-left: 0;
     height: 40vh;
     width: 15vw;
     position: relative;
