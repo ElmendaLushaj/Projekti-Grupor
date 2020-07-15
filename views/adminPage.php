@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/insertAboutUs.php';
+require_once 'C:/xampp/htdocs/Projekti-Grupor/views/insertAboutUs.php';
 $produkt = new InsertView();
 $produktet = $produkt->getKomentet();
 ?>
@@ -36,7 +36,8 @@ $produktet = $produkt->getKomentet();
 
 
             <div class="nenmeny">
-                <button class="nmenubtn" type="menu">Products</button>
+                <button class="nmenubtn" type="menu" >Home</button>
+                <button class="nmenubtn" type="menu"onclick="location.href='productForm.php'">Products</button>
                 <button class="nmenubtn" type="menu">Product Slider</button>
                 <button class="nmenubtn" type="menu">Offers</button>
                 <button class="nmenubtn" type="menu">Markets</button>
