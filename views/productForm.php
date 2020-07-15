@@ -50,30 +50,30 @@
                 <form action="insertProductView.php" method="post" enctype="multipart/form-data">
                     <div class="block">
                         <label class="label">Product Name</label>
-                        <input class="inputi1" type="text" name="ProductName" placeholder="Product Name" />
+                        <input class="inputi1" id="name" type="text" name="ProductName" placeholder="Product Name" />
                     </div>
                     <div class="block">
                         <label class="label" for="ProductCode">Product Code</label>
-                        <input class="inputi2" type="text" name="ProductCode" placeholder="Product Code" />
+                        <input class="inputi2" id="code" type="text" name="ProductCode" placeholder="Product Code" />
                     </div>
                     <div class="block">
                         <label class="label" for="Producer">Producer </label>
-                        <input class="inputi3" type="text" name="Producer" placeholder="Producer" data-validation="custom" />
+                        <input class="inputi3" id="producer"type="text" name="Producer" placeholder="Producer" data-validation="custom" />
                     </div>
 
                     <div class="block">
                         <label class="label">Price</label>
-                        <input class="inputi5" type="text" name="Category" placeholder="Price" />
+                        <input class="inputi5" id="price" type="text" name="Category" placeholder="Price" />
                     </div>
                     <div class="block">
                         <label class="label">Product Picture</label>
-                        <input class="fields" class="inputi" type="file" name="ProductPicPath" accept="image/x-png,image/gif,image/jpeg" placeholder="Product Picture" />
+                        <input class="fields"id="file" class="inputi" type="file" name="ProductPicPath" onclick="fileValidation()"accept="image/x-png,image/gif,image/jpeg" placeholder="Product Picture" />
                     </div>
                     <input class="btn" type="submit" name="submitbtn" onclick="noDataReg()"value="Register" />
 
                     <div class="block">
                         <label class="label">Product ID (Fill only for editing or deleting datas!)</label>
-                        <input class="inputi6" type="text" name="ProductID" placeholder="Product ID" />
+                        <input class="inputi6"id="id" type="text" name="ProductID" placeholder="Product ID" />
                     </div>
                     <div class="blockz">
                         <input class="btn" type="submit" name="submitbtn3" onclick="noDatadel()" value="Delete" />

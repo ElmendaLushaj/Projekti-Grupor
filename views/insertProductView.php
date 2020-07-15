@@ -67,10 +67,11 @@ class InsertView
 {
     public function InsertProductForm($ProductName, $ProductCode, $Producer,$Price,$ProductPicPath)
     {
-        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''){
+        if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' || !is_nan($ProductCode) || !is_nan($Price)){
 
             echo "You did not fill out the required fields.";
-          
+            header("Location:productForm.php"); 
+            exit();
          
 
 
@@ -111,6 +112,10 @@ public function getP()
 
 public function DeleteP($ProductID){
   
+    if(!isset($ProductID) || trim($ProductID) == '' ||!is_nan($ProductID)){
+        header("Location:productForm.php");    
+         exit();}
+         else{
     $controller = new ProductController();
     
     $response = $controller->DeleteProduct($ProductID);
@@ -130,16 +135,19 @@ public function DeleteP($ProductID){
       <?php
    
 
-}
+}}
 }
 
 public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
-
+    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''||!isset($idd) || trim($idd) == '' ||!is_nan($idd) || !is_nan($ProductCode) || !isset($Price)){
+        header("Location:productForm.php");    
+         exit();}
+         else{
     $controller = new ProductController();
     $response = $controller->EditProduct($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);
     if ($response) {
         ?>
-                    <h1>Editit succsesfully</h1>
+                    <h1>Edited Successfully!</h1>
                   
                 <?php
                // header("Location:../homepage.php"); 
@@ -147,13 +155,13 @@ public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$Product
                 } else {
                 ?>
                
-                    <h>Edit Failed</h1>
+                    <h>Edit Failed!</h1>
     
       <?php
    
 
 
-
+                }
 
 }
 }
