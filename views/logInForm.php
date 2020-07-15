@@ -57,6 +57,8 @@ class LogInView
                     } else {
                         if($roliId == 1){
                             echo 'You are admin';
+                            header("Location:../views/adminPage.php"); 
+                            exit();
 
                         }else{
                     ?>

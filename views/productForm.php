@@ -45,7 +45,7 @@
                     <form action="insertProductView.php" method="post" enctype="multipart/form-data">
                         <div class="block">
                             <label class="label">Product Name</label>
-                            <input class="inputi1" type="text" name="ProductName" placeholder="Product Name" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" data-validation-error-msg="You did not enter a valid name" />
+                            <input class="inputi1" type="text" name="ProductName" placeholder="Product Name"  data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" data-validation-error-msg="You did not enter a valid name" />
                         </div>
                         <div class="block">
                             <label class="label" for="ProductCode">Product Code</label>
@@ -55,14 +55,10 @@
                             <label class="label" for="Producer">Producer </label>
                             <input class="inputi3" type="text" name="Producer" placeholder="Producer" data-validation="custom" data-validation-regexp="^([a-zA-Z]+)$" data-validation-error-msg="You did not enter a valid name" />
                         </div>
-                        <div class="block">
-                            <label class="label">Category</label>
-                            <input class="inputi4" type="text" name="Category" placeholder="Category"data-validation="custom" 
-					data-validation-regexp="^([a-zA-Z]+)$"	data-validation-error-msg="You did not enter a valid name" />
-                        </div>
+                       
                         <div class="block">
                             <label class="label">Price</label>
-                            <input class="inputi5" type="text" name="Price" placeholder="Price" />
+                            <input class="inputi5" type="text" name="Category" placeholder="Price" />
                         </div>
                         <div class="block">
                             <label class="label">Product Picture</label>

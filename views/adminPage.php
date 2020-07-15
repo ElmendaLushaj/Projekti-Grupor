@@ -1,7 +1,7 @@
 <?php
-require_once 'C:/xampp/htdocs/Projekti-Grupor-11/views/insertAboutUs.php';
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/insertAboutUs.php';
 $produkt = new InsertView();
-$produktet = $produkt->getP();
+$produktet = $produkt->getKomentet();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,11 +61,10 @@ $produktet = $produkt->getP();
                        
 
                        <div class="img-box">
-                       <?php if($produkt['Comment']):?>
-                          <img src="<?php echo $produkt['Comment'];?>">
-                       <?php else: ?>
-                       <p>No comment selected</p>
-                       <?php endif ?>
+                    
+                         <p> <?php echo $produkt['Comment'];?></p>
+                       
+                     
                        </div>
                        
                       

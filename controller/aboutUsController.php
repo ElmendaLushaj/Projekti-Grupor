@@ -15,7 +15,7 @@ class AboutUsController
 
 
     }
-    public function get_Products(){
+    public function getK(){
        $aboutUsMapper4 = new AboutUsMapper();
        $produktet = $aboutUsMapper4->getKomentet();
        return $produktet;
