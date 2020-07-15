@@ -380,3 +380,87 @@
     margin-left: 85%;
     color: white;
 }
+@media only screen and  (max-width: 375px){
+    
+    .footbx2{
+          margin-top: 5px;
+          margin-bottom: 5px;
+    }
+     
+    .footer{
+       display: flex;
+       flex-direction: column;
+        
+       
+        
+
+        
+        
+    }
+    .footbx3{
+         margin-left: 10%;
+
+    }
+    .meny{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10%;
+        
+    }
+    #homebtn{
+        margin-left: 7%;
+    }
+    #area{
+        
+        width:200px;
+        height: 100px;
+    }
+    .FOTOBox{
+        width: 100px;
+        height: 200px;
+    }
+    .BoxiKryesor{
+        margin-left:3%;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .pocketMarket{
+        font-size: 30px;
+        margin-right: 25%;
+    }
+    .middlepart{
+        margin-left:15%;
+    }
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+    #nmenubtn{
+    font-size: 20px;
+    width: auto;
+    margin-left:5%;
+    }
+    .nenmeny{
+        display: flex;
+        flex-direction: row;
+    }
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+       
+    }
+    .slider-box{
+        width:150px;
+        margin-left:5px;
+    
+      
+    }
+}
