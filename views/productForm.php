@@ -3,6 +3,8 @@
 
 <head>
     <title>pocketMarket-Products</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="productFormStyle.css">
 
     <script src = "productFormValidation.js">
@@ -43,7 +45,7 @@
          
             <div class="form-group">
                 <div class="form-header">
-                    <h2>Product Register</h2>
+                    <h2 class = "titulli">Product Register</h2>
                 </div>
                 <form action="insertProductView.php" method="post" enctype="multipart/form-data">
                     <div class="block">

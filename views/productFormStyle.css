@@ -568,3 +568,53 @@
     margin-left: 85%;
     color: white;
 }
+
+@media only screen and  (max-width: 375px){
+    
+    .footbx2{
+          margin-top: 5px;
+          margin-bottom: 5px;
+    }
+     
+    .footer{
+       display: flex;
+       flex-direction: column;
+        
+       
+        
+
+        
+        
+    }
+    .footbx3{
+         margin-left: 10%;
+
+    }
+  
+    .middle{
+        width:100px;
+    }
+    .nmenubtn{
+        font-size:20px;
+    }
+    .titulli{
+        font-size: 25px;
+    }
+    .btn1{
+        margin-left:5%;
+    }
+    .inputi3{
+        margin: 0px 0px 0px 55px;
+    }
+    .inputi5{
+        margin: 0px 0px 0px 55px;
+    }
+    .input1{
+        
+      margin: 0px 0px 0px 55px;
+        
+    }
+    .inputi2{
+        margin: 0px 0px 0px 55px;
+    }
+}
