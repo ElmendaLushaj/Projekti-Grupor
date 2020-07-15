@@ -12,8 +12,11 @@ function noDataReg() {
     } else {
         if (isNaN(input1)) {
             alert("Code must be a number");
+            
+            
         } else if (isNaN(input5)) {
             alert("Price must be a number");
+            window.open('../productForm.php');
         }
     }
 }

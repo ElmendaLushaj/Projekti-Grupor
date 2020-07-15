@@ -1,9 +1,9 @@
 <?php
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/showProductView.php';
+require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/views/showProductView.php');
 $slide = new InsertView();
 $sliderat = $slide->getSliderProducts();
 
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/showSliderMarketView.php';
+require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/views/showSliderMarketView.php');
 $slide1 = new InsertView2();
 $sliderat1 = $slide1->getSliderMarket();
 
@@ -197,7 +197,7 @@ $sliderat1 = $slide1->getSliderMarket();
             </div>
             <div class="footbx2">
                 <button type="button" id="aboutus" onclick="location.href='aboutus.php'">ABOUT US</button>
-                <button type="button" id="aboutus">REGISTER</button>
+                <button type="button" id="aboutus"  onclick="location.href='logIn.php'">REGISTER</button>
             </div>
 
             <div class="footbx3">

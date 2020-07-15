@@ -127,9 +127,17 @@ public function getP()
 
 public function DeleteP($ProductID){
   
-    if(!isset($ProductID) || trim($ProductID) == '' ){
-        header("Location:../productForm.php");    
-         exit();}
+    if(!isset($ProductID) || trim($ProductID) == '' || !is_numeric($ProductID)){
+        
+
+        echo '<script type="text/javascript">'; 
+     
+        echo 'window.location.href = "../productForm.php";';
+        echo '</script>';
+        
+        
+        
+        }
          else{
     $controller = new ProductController();
     
@@ -170,9 +178,11 @@ echo '</script>';
 }
 
 public function editP($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath){
-    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == ''){
-        header("Location:../productForm.php");    
-         exit();}
+    if(!isset($ProductName) || trim($ProductName) == '' || !isset($ProductCode) || trim($ProductCode) == '' || !isset($Producer) || trim($Producer) == ''|| !isset($Price) || trim($Price) == ''|| !isset($ProductPicPath) || trim($ProductPicPath) == '' || !is_numeric($idd)){
+        echo '<script type="text/javascript">'; 
+     
+        echo 'window.location.href = "../productForm.php";';
+        echo '</script>';}
          else{
     $controller = new ProductController();
     $response = $controller->EditProduct($idd,$ProductName, $ProductCode, $Producer,$Price,$ProductPicPath);

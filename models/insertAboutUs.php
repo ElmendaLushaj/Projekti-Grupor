@@ -21,15 +21,30 @@ class InsertView
 
         if ($response) {
             ?>
-                        <h1>Komenti u dergua</h1>
+                          <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Comment send!");'; 
+echo 'window.location.href = "../homepage.php";';
+echo '</script>';
+
+
+?>
                       
                     <?php
-                   header("Location:../homepage.php"); 
-                    exit();
+                   
                     } else {
                     ?>
                    
-                        <h1>Komenti nuk u dergua</h1>
+                   <?php
+
+echo '<script type="text/javascript">'; 
+echo 'alert("Comment Failed!");'; 
+echo 'window.location.href = "../homepage.php";';
+echo '</script>';
+
+
+?>
         
           <?php
          // header("Location:../logIb.php"); 

@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/models/insertAboutUs.php';
+require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/models/insertAboutUs.php');
 $produkt = new InsertView();
 $produktet = $produkt->getKomentet();
 ?>

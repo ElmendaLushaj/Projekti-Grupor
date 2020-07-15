@@ -1,5 +1,5 @@
 <?php
-include_once 'C:/xampp2/htdocs/Projekti-Grupor/controller/sliderProductControllers.php';
+include_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/controller/sliderProductControllers.php');
 
 
 class InsertView

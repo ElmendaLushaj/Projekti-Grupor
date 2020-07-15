@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/showListView.php';
+require_once ($_SERVER['DOCUMENT_ROOT'].'/Projekti-Grupor/views/showListView.php');
 $lista = new InsertView();
 $listat = $lista->getShoppingList();
 ?>
