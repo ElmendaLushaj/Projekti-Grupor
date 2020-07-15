@@ -264,6 +264,8 @@ td {
        display: flex;
        flex-direction: column;
         width: 100%;
+        margin-top: 150%;
+        
 
         
         
@@ -284,6 +286,18 @@ td {
     #homebtn{
         margin-left: 7%;
     }
-    
+    .text{
+        margin-top: 20%;
+    }
+    .legendd{
+        margin-left: 5%;
+    }.out{
+        margin-left:9%;
+    }
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+        width:300px;
+	}
+   
  
 }

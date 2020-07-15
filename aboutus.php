@@ -3,7 +3,9 @@
 
 <head>
     <title>ABOUT-US</title>
-    <link rel="stylesheet" type="text/css" href="aboutCss.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="aboutCss.css">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
 
 
 <div class="AboutUsBoxi">
-    <h1 style="padding-bottom:0px; padding-left: 70%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <h1 class="texti" style="padding-bottom:0px; padding-left: 70%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         ABOUT US</h1>
     <h4 style="color:black; padding-left: 15%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         Pocket Market is a new application,
@@ -32,7 +34,7 @@
     </h4>
     
         <div class="textarea">
-            <h3 style="padding-left:15%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> QUESTION AND CRITIC US</h3>
+            <h3 style="padding-left:15%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Give us your thoughts</h3>
             <form action="models/insertAboutUs.php" method="post">
             <input id="area" name="w3review" rows="10" cols="50"/>
                

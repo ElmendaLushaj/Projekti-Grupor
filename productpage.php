@@ -82,7 +82,7 @@ $produktet = $produkt->getP();
 
                             <div class="img-box">
                             <?php if($produkt['ProductPicPath']):?>
-                               <img src="<?php echo $produkt['ProductPicPath'];?>">
+                               <img class = "imgg"src="<?php echo $produkt['ProductPicPath'];?>">
                             <?php else: ?>
                             <p>No image selected</p>
                             <?php endif ?>

@@ -24,7 +24,7 @@ $listat = $lista->getShoppingList();
             <button id="homebtn" type="menu"><img id="imge" src="languageicon.JPG"  ></button>
 
         </div>
-        <h2>Your Cart</h2>
+        <h2 class="text">Your Cart</h2>
         <hr style="color: white; width: 150px; margin-left:45%;">
         <p style="font-family: 'Segoe Print'; margin-bottom: 5px;">Make the perfect purchase from your home</p>
     </header>
