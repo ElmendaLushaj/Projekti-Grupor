@@ -1,5 +1,5 @@
 <?php
-require_once 'C:/xampp2/htdocs/Projekti-Grupor/models/insertProductView.php';
+require_once 'C:/xampp2/htdocs/Projekti-Grupor/views/insertProductView.php';
 $produkt = new InsertView();
 $produktet = $produkt->getP();
 ?>
@@ -7,7 +7,10 @@ $produktet = $produkt->getP();
 <html lang="en">
 
 <head>
+
     <title>pocketMarket-Products</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="productpageadminstyle.css">
 
 

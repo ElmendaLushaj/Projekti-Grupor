@@ -413,3 +413,57 @@
     background-color: maroon;
     opacity: 95%;
 }
+
+@media only screen and  (max-width: 375px){
+    
+    .footbx2{
+          margin-top: 5px;
+          margin-bottom: 5px;
+    }
+     
+    .footer{
+       display: flex;
+       flex-direction: column;
+       margin-top: 50%; 
+       
+    }
+    .footbx3{
+         margin-left: 10%;
+
+    }
+  
+  
+    .nmenubtn{
+        font-size:15px;
+        width:60px;
+    }
+    .nenmeny{
+        width:800px;
+        margin-left: 0;
+    }
+    .middle{
+        width:60px; 
+    }
+    
+   
+   
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+      
+    }
+    .swiper-container{
+        margin-left: 0;
+    }
+    .slider-box{
+        width:150px;
+
+        margin-left: 0;
+        margin-right: 0;
+    
+      
+    }
+    
+}

@@ -8,6 +8,8 @@ $produktet = $produkt->getKomentet();
 
 <head>
     <title>pocketMarket-Products</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="productFormStyle.css">
 
 
@@ -46,7 +48,7 @@ $produktet = $produkt->getKomentet();
             <body>
                 <div class="form-group">
                     <div class="form-header">
-                        <h2>About Us-Comments</h2>
+                        <h2 class ="titulli1">About Us Comments</h2>
                     </div>
                     <div class="swiper-container">
            

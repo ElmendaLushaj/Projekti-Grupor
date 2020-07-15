@@ -579,7 +579,7 @@
     .footer{
        display: flex;
        flex-direction: column;
-        
+       margin-top: 50%; 
        
         
 
@@ -592,13 +592,16 @@
     }
   
     .middle{
-        width:100px;
+        width:150px;
     }
     .nmenubtn{
         font-size:20px;
     }
     .titulli{
         font-size: 25px;
+    }
+    .titulli1{
+        font-size:20px;
     }
     .btn1{
         margin-left:5%;
@@ -609,12 +612,22 @@
     .inputi5{
         margin: 0px 0px 0px 55px;
     }
-    .input1{
+    .inputi1{
         
       margin: 0px 0px 0px 55px;
         
     }
     .inputi2{
         margin: 0px 0px 0px 55px;
+    }
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .slider-box{
+        width:150px;
+        height: 150px;
     }
 }
