@@ -71,7 +71,7 @@
             </div>
             <div class="footbx2">
                 <button type="button" id="aboutus" onclick="location.href='aboutus.php'">ABOUT US</button>
-                <button type="button" id="aboutus">REGISTER</button>
+                <button type="button" id="aboutus" onclick="location.href='logIn.php'">REGISTER</button>
             </div>
 
             <div class="footbx3">
